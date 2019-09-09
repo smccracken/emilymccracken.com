@@ -1,0 +1,20 @@
+.main-footer {
+	font-size: 80%;
+	font-weight: 600;
+	padding: 30px 30px 27px;
+	border-top: 1px solid #ddd;
+	background-color: $color-orange-light;
+	clip-path: url(#wave);
+}
+.main-footer {
+	padding: 30px 30px 27px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.main-footer a {
+	margin-left: 20px;
+}

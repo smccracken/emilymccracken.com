@@ -1,0 +1,37 @@
+// Stack
+.stack {
+  --space: 1.5rem;
+
+  & > * + * {
+  	margin-top: var(--space);
+  }
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.off-screen {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	text-indent: -9999px;
+}
+
+.flex {
+	display: flex;
+}
+
+// Text
+.lowercase {
+	text-transform: lowercase;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+em.rank {
+	font-style: normal;
+}

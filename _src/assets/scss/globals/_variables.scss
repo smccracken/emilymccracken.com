@@ -1,0 +1,39 @@
+// Font Family
+$font-family-headline: 'RubikBlack', Arial, sans-serif;
+$font-family-header: 'Rubik', Arial, sans-serif;
+$font-family-body: 'SourceSansPro', Arial, sans-serif;
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-extra-bold: 800;
+
+// Colors
+$color-blue: #aee5d2;
+$color-blue-dark: #91c7b7;
+$color-orange: #e2732c;
+$color-orange-light: #f4d3a8;
+$color-orange-dark: #dc7633;
+$color-red: #a01d25;
+$color-red-light: #faaf92;
+$color-red-dark: #822020;
+$color-yellow: #fbfadb;
+$color-yellow-dark: #ebbb40;
+$color-grey-dark: #444;
+$color-grey-medium: #777;
+$color-grey-light: #ccc;
+$color-grey-lightest: #f1f1f1;
+$color-white: #fff;
+$color-black: #000;
+
+// Breakpoints
+$w-small: 300px;
+$w-medium: 600px;
+$w-large: 900px;
+$w-huge: 1150px;
+
+$bp-small: 'screen and (min-width: $w-small) and (max-width: $w-medium - 1)';
+$bp-medium: 'screen and (min-width: $w-medium) and (max-width: $w-large - 1)';
+$bp-large: 'screen and (min-width: $w-large) and (max-width: $w-huge - 1)';
+$bp-huge: 'screen and (min-width: $w-huge)';
