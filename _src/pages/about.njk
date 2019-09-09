@@ -1,0 +1,58 @@
+---
+title: About Me
+permalink: /about/index.html
+tags: nav
+navtitle: About
+navorder: 3
+---
+{% extends "layouts/page.njk" %}
+
+{% set MD %}
+I'm **Emily McCraken**, an artist and chocolatier. For the last 17 years I've worked at [Lake Champlain Chocolates](http://www.lakechamplainchocolates.com/) where I create retail specialty products, teach chocolate-related classes, and create [chocolate sculptures](https://www.chocolatesculptress.com).
+
+My work has been featured on the [Food Network](https://www.foodnetwork.com/videos/cuckoo-for-chocolate-0235421), the [Dr. Oz Show](http://www.chocolatesculptress.com/journal/2014/dr-oz-chocolate-sculptures), and by [Mastercard's Priceless campaign](http://www.chocolatesculptress.com/press).
+
+I live in northern Vermont with my [husband](https://scottmccracken.net), 6-year old daughter, and two rescue terrier muts.
+
+## Teaching
+
+The [Boston Globe](https://www.bostonglobe.com/lifestyle/travel/2014/04/19/hot-burlington-new-england-locavore-capital-revels-good-taste/hgrbGRu3Fee04xqd7eCN5N/story.html) said _"[a]ny chocoholic worth his salted caramel will melt at the opportunity to spend an hour making chocolate bars with Lake Champlain’s chocolate sculptress, Emily McCracken._"
+{% endset %}
+
+{% block content %}
+	<figure class="about-emily">
+		<img src="/assets/img/about-emily.jpg" alt="Emily on her wedding day, holding a red velvet cupcake" />
+	</figure>
+
+    {{ MD | markdownify | safe }}
+
+    <style type="text/css">
+    	.media {
+    		display: grid;
+    		grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    		grid-column-gap: 20px;
+    	}
+    </style>
+
+    <section class="media">
+    	<div class="media-pub">
+		    <h2>Publications</h2>
+			<ol>
+			{% for mention in publications %}
+				<li class="mention"><a href="{{ mention.link }}">{{ mention.title }}</a> in <i>{{ mention.publisher }}</i> <time>{{ mention.date }}</time></li>
+			{% endfor %}
+			</ol>
+		</div>
+		<div class="media-tv">
+			<h2>TV and Online Video</h2>
+			<ol>
+			{% for video in videos %}
+				<li class="mention"><a href="{{ video.link }}">{{ video.title }}</a> on <i>{{ video.publisher }}</i> at {{ video.location}} <time>{{ video.date }}</time></li>
+			{% endfor %}
+			</ol>
+		</div>
+	</section>
+
+	<h2>Support My Work</h2>
+	<p>Follow me on <a href="https://twitter.com/{{ metadata.social.twitter }}">Twitter</a>, <a href="https://instagram.com/{{ metadata.social.instagram }}">Instagram</a>, and <a href="https://www.facebook.com/{{ metadata.social.facebook }}/">Facebook</a>.</p>
+{% endblock %}

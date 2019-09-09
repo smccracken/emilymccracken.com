@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" class="fonts">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="index,follow" />
+
+		<title>{% if title and page.url != '/' %}{{ title }} - {% else %}{% endif %}{{ metadata.title }}</title>
+		<meta name="description" content="{% if description %}{{ description | strip_html }}{% else %}{{ metadata.description }}{% endif %}" />
+
+		<link rel="preload" href="/assets/fonts/AbrilFatface.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+	
+	<body class="{% if templateClass %}{{ templateClass }}{% else %}{{ class }}{% endif %}">
+		<a class="sr-only link-skip" href="#main" title="Skip to main content">Skip to main content</a>
+		{% include "components/header.njk" %}
+		<main role="main" id="main"{% if page.url == "/" %} class="home"{% endif %}>
+		{% block content %}{% endblock %}
+		</main>
+		{% include "components/footer.njk" %}
+		<script type="text/javascript" src="/assets/js/main.js"></script>
+		<!--! LAST BUILD: {{ build.timestamp }} -->
+	</body>
+</html>
