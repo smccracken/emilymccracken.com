@@ -11,18 +11,20 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
 
 	// Passthrough
-	eleventyConfig.addPassthroughCopy('/assets/**/*.css');
+	eleventyConfig.addPassthroughCopy('_src/assets/fonts');
+	eleventyConfig.addPassthroughCopy('_src/assets/img');
+	eleventyConfig.addPassthroughCopy('_src/assets/css/main.css');
 
 	// Collections
-  eleventyConfig.addCollection('nav', function(collection) {
-      return collection.getFilteredByTag('nav').sort(function(a, b) {
-          return a.data.navorder - b.data.navorder
-      })
-  });
+	eleventyConfig.addCollection('nav', function(collection) {
+	  return collection.getFilteredByTag('nav').sort(function(a, b) {
+	      return a.data.navorder - b.data.navorder
+	  })
+	});
 
-  eleventyConfig.addCollection('posts', function(collection) {
-    return collection.getFilteredByGlob('**/posts/*.md').reverse();
-  });
+	eleventyConfig.addCollection('posts', function(collection) {
+		return collection.getFilteredByGlob('**/posts/*.md').reverse();
+	});
 
 	return {
 	    templateFormats: ['njk','md','html'],
