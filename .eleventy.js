@@ -32,9 +32,9 @@ module.exports = function(eleventyConfig) {
 	    htmlTemplateEngine: 'njk',
 	    dataTemplateEngine: 'njk',
 	    dir: {
+		  data: '_data',
 	      input: '_src',
-	      output: '_site',
-	      data: '_data'
+	      output: 'dist'
 	    },
 	    passthroughFileCopy: true
 	  };

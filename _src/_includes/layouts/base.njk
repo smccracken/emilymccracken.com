@@ -9,7 +9,10 @@
 		<meta name="description" content="{% if description %}{{ description | strip_html }}{% else %}{{ metadata.description }}{% endif %}" />
 
 		<link rel="preload" href="/assets/fonts/AbrilFatface.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="stylesheet" href="/assets/css/main.css" />
+		{% set css %}
+			{% include "assets/css/main.css" %}
+		{% endset %}
+		<style>{{ css | cssmin | safe }}</style>
 	</head>
 	
 	<body class="{% if templateClass %}{{ templateClass }}{% else %}{{ class }}{% endif %}">
