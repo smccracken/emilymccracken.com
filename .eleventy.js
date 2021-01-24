@@ -1,41 +1,70 @@
-const filters = require('./_11ty/filters');
+require("dotenv").config();
+
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginNavigation = require("@11ty/eleventy-navigation");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require("markdown-it-footnote");
 
-module.exports = function(eleventyConfig) {
-	// Filters
-	Object.keys(filters).forEach(filterName => {
-    	eleventyConfig.addFilter(filterName, filters[filterName])
-  	});
+// Variables
+const now = new Date();
+const IS_PRODUCTION = process.env.ELEVENTY_ENV === "production";
 
- 	// Plugins
-	eleventyConfig.addPlugin(pluginRss);
+// Filters
+const dateReadable = require("./src/filters/date-readable.js");
 
-	// Passthrough
-	eleventyConfig.addPassthroughCopy('_src/assets/fonts');
-	eleventyConfig.addPassthroughCopy('_src/assets/img');
-	eleventyConfig.addPassthroughCopy('_src/assets/css/main.css');
+module.exports = function (config) {
+    // Markdown
+    let markdownLibrary = markdownIt({
+        html: true,
+        breaks: true,
+        linkify: true,
+    })
+        .use(markdownItAnchor, {
+            permalink: true,
+            permalinkClass: "heading-permalink",
+            permalinkSymbol: "∞",
+        })
+        .use(markdownItFootnote);
+    config.setLibrary("md", markdownLibrary);
 
-	// Collections
-	eleventyConfig.addCollection('nav', function(collection) {
-	  return collection.getFilteredByTag('nav').sort(function(a, b) {
-	      return a.data.navorder - b.data.navorder
-	  })
-	});
+    let markdownItOpts = {
+        html: true,
+        linkify: false,
+        typographer: true,
+    };
+    let markdownItAnchorOpts = {
+        permalink: true,
+        permalinkClass: "direct",
+        permalinkSymbol: "",
+    };
 
-	eleventyConfig.addCollection('posts', function(collection) {
-		return collection.getFilteredByGlob('**/posts/*.md').reverse();
-	});
+    const md = markdownIt(markdownItOpts);
+    md.use(markdownItFootnote);
+    md.use(markdownItAnchor);
 
-	return {
-	    templateFormats: ['njk','md','html'],
-	    markdownTemplateEngine: 'njk',
-	    htmlTemplateEngine: 'njk',
-	    dataTemplateEngine: 'njk',
-	    dir: {
-		  data: '_data',
-	      input: '_src',
-	      output: 'dist'
-	    },
-	    passthroughFileCopy: true
-	  };
+    //Add Filters
+    config.addFilter("dateReadable", dateReadable);
+
+    // Plugins
+    config.addPlugin(pluginRss);
+    config.addPlugin(pluginNavigation);
+
+    // Asset Watch Targets
+    config.addWatchTarget("./src/assets");
+
+    // Base Config
+    return {
+        templateFormats: ["html", "njk", "md"],
+        dataTemplateEngine: "njk",
+        htmlTemplateEngine: "njk",
+        markdownTemplateEngine: "njk",
+        passthroughFileCopy: true,
+        dir: {
+            input: "src",
+            output: "dist",
+            includes: "_includes",
+            data: "_data",
+        },
+    };
 };
