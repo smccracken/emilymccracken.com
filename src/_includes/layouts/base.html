@@ -1,20 +1,36 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {% include "components/meta.html" %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emily McCracken, Vermont Artist and Teacher</title>
+    <link rel="canonical" href="https://emilymccracken.com/">
+
+    <meta property="og:site_name" content="Emily McCracken">
+    <meta property="og:title" content="Emily McCracken, Vermont Artist and Teacher">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://emilymccracken.com/">
+    <meta property="og:image" content="https://emilymccracken.com/images/social-share.png"/>
+
+    <meta name="twitter:image" content="https://emilymccracken.com/social-share.png"/>
+    <meta property="og:image:alt" content="Vermont Artist Emily McCracken"/>
+    <meta name="twitter:image:alt" content="Vermont Artist Emily McCracken"/>
+
+    <meta name="description" content="Emily McCracken is an illustrator, chocolate sculptress, and aspiring art teacher in northern Vermont."/>
+    <meta name="twitter:description" content="Emily McCracken is an illustrator, chocolate sculptress, and aspiring art teacher in northern Vermont."/>
+    <meta property="og:description" content="Emily McCracken is an illustrator, chocolate sculptress, and aspiring art teacher in northern Vermont."/>
   </head>
   <body>
-    <div class="site-wrap">
-      {% include "components/site-header.html" %}
-
-      <main tabindex="-1" id="main-content">
-        <p>A work in progress</p>
-        {% block content %}{% endblock %}
-      </main>
-
-      {% include "components/site-footer.html" %}
-    </div>
+    <main tabindex="-1" id="main-content">
+      <article class="lander wrapper">
+        <h1>{{ title }}</h1>
+        <p class="lede">{{ lede }}</p>
+        <div class="lander__content text-step-5 mt-s-m lg:ml-[2ch]">
+          <div class="flow text-step-0">
+              {{ layoutContent }}
+          </div>
+        </div>
+      </article>
+    </main>
   </body>
 </html>

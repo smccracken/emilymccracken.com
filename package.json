@@ -1,33 +1,23 @@
 {
-    "name": "emilymccracken.com",
-    "version": "1.0.0",
-    "description": "Artist from northern Vermont",
-    "scripts": {
-        "build": "npx eleventy",
-        "start": "npx eleventy --serve --watch"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:smccracken/emilymccracken"
-    },
-    "author": {
-        "name": "Scott McCracken",
-        "email": "scottmccracken@gmail.com",
-        "url": "https://scottmccracken.net"
-    },
-    "license": "MIT",
-    "homepage": "https://emilymccracken.com",
-    "devDependencies": {
-        "@11ty/eleventy": "^0.11.1",
-        "@11ty/eleventy-navigation": "^0.1.6",
-        "@11ty/eleventy-plugin-rss": "^1.0.9",
-        "clean-css": "^4.1.11",
-        "dotenv": "^8.2.0",
-        "html-minifier": "^3.5.19",
-        "markdown-it": "^8.4.2",
-        "markdown-it-anchor": "^5.0.2",
-        "markdown-it-footnote": "^3.0.2",
-        "moment": "^2.29.1",
-        "moment-timezone": "^0.5.32"
-    }
+  "name": "emilymccracken.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smccracken/emilymccracken.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smccracken/emilymccracken.com/issues"
+  },
+  "homepage": "https://github.com/smccracken/emilymccracken.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
 }
