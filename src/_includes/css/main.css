@@ -87,10 +87,25 @@ button, input, select, textarea {
 }
 
 body {
-    background-color: var(--color-blue-dark);
-    background-image: linear-gradient(200deg, rgba(255,55,24, 1) 0, var(--color-dark) 25%);
     color: var(--color-white);
     font-family: 'BrandonText', Helvetica, sans-serif;
+    background-color: var(--color-blue-dark);
+    background-image: linear-gradient(
+      330deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(227deg 100% 24%) 12%,
+      hsl(221deg 100% 27%) 23%,
+      hsl(216deg 100% 29%) 32%,
+      hsl(212deg 100% 31%) 42%,
+      hsl(208deg 100% 32%) 51%,
+      hsl(204deg 100% 33%) 59%,
+      hsl(200deg 100% 34%) 67%,
+      hsl(195deg 100% 34%) 75%,
+      hsl(191deg 100% 34%) 82%,
+      hsl(186deg 100% 34%) 89%,
+      hsl(182deg 100% 34%) 95%,
+      hsl(177deg 86% 38%) 100%
+    );
 }
 
 a {
