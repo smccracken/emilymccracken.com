@@ -1,4 +1,5 @@
 module.exports = config => {
+    config.addPassthroughCopy('./src/fonts/');
     config.addPassthroughCopy('./src/images/');
 
     return {
