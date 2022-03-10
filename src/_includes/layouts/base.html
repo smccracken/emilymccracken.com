@@ -19,17 +19,18 @@
     <meta name="description" content="Emily McCracken is an illustrator, chocolate sculptress, and aspiring art teacher in northern Vermont."/>
     <meta name="twitter:description" content="Emily McCracken is an illustrator, chocolate sculptress, and aspiring art teacher in northern Vermont."/>
     <meta property="og:description" content="Emily McCracken is an illustrator, chocolate sculptress, and aspiring art teacher in northern Vermont."/>
+    <style>
+    {% include "css/main.css" %}
+    </style>
   </head>
   <body>
     <main tabindex="-1" id="main-content">
-      <article class="lander wrapper">
-        <h1>{{ title }}</h1>
-        <p class="lede">{{ lede }}</p>
-        <div class="lander__content text-step-5 mt-s-m lg:ml-[2ch]">
-          <div class="flow text-step-0">
-              {{ layoutContent }}
-          </div>
-        </div>
+      <article class="lander container flow">
+        <header>
+          <h1 class="display-heading">{{ title }}</h1>
+          <p class="lede">An illustrator, <a href="https://www.chocolatesculptress.com" title="My chocolate art and showpieces">chocolate sculptress</a>, and aspiring art teacher in northern Vermont.</p>
+        </header>
+        <p class="text-step-0 flow">A work in progress</p>
       </article>
     </main>
   </body>

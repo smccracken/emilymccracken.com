@@ -1,0 +1,135 @@
+*, ::after, ::before {
+    box-sizing:border-box
+}
+
+blockquote, body, dd, dl, figure, h1, h2, h3, h4, p {
+    margin:0
+}
+
+ol[role=list], ul[role=list] {
+    list-style:none
+}
+
+html {
+    text-size-adjust: none;
+    -webkit-text-size-adjust:none
+}
+
+html:focus-within {
+    scroll-behavior:smooth
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height:1.5
+}
+
+a:not([class]) {
+    text-decoration-skip-ink:auto
+}
+
+img, picture {
+    max-width: 100%;
+    display:block
+}
+
+button, input, select, textarea {
+    font:inherit
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior:auto
+    }
+
+    *, ::after, ::before {
+        animation-duration: 0s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0s !important;
+        scroll-behavior:auto !important
+    }
+}
+
+@font-face {
+    font-family: "Rotundo";
+    src: url("/fonts/Rotundo-Regular.woff2") format("woff2"), url("/fonts/Rotundo-Regular.woff") format("woff");
+    font-display: block;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "BrandonText";
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: -.01em;
+    src: url("/fonts/BrandonTextRegular.woff2") format("woff2"), url("/fonts/BrandonTextRegular.woff?v=1643405670") format("woff"); 
+}
+
+:root {
+    --color-blue: #001f4e;
+    --color-blue-light: #005b65;
+    --color-dark: #001330;
+    --color-light: #99e6ee;
+    --color-accent: #fe3718;
+    --color-white: #fefefe;
+    --font-base: "BrandonText", "Helvetica Neue", Helvetica, sans-serif;
+    --font-lede: interblack, "Rotundo", "Helvetica Neue", Helvetica, sans-serif;
+    --size-step-0: clamp(1.00rem, calc(0.91rem + 0.45vw), 1.25rem);
+    --size-step-1: clamp(1.33rem, calc(1.11rem + 1.10vw), 1.94rem);
+    --size-step-2: clamp(1.78rem, calc(1.33rem + 2.23vw), 3.00rem);
+    --size-step-3: clamp(2.37rem, calc(1.54rem + 4.16vw), 4.66rem);
+    --size-step-4: clamp(3.16rem, calc(1.68rem + 7.38vw), 7.22rem);
+    --size-step-5: clamp(4.21rem, calc(1.67rem + 12.68vw), 11.18rem);
+    --space: clamp(1.50rem, calc(1.36rem + 0.68vw), 1.88rem);
+    --space-l-xl: clamp(2.00rem, calc(1.36rem + 3.18vw), 3.75rem);
+}
+
+body {
+    background-color: var(--color-blue-dark);
+    background-image: linear-gradient(200deg, rgba(255,55,24, 1) 0, var(--color-dark) 25%);
+    color: var(--color-white);
+    font-family: 'BrandonText', Helvetica, sans-serif;
+}
+
+a {
+    text-decoration-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.display-heading {
+    font-size: var(--size-step-3);
+    font-weight: 400;
+    line-height: 1;
+    text-transform:uppercase;
+    font-family: var(--font-lede);
+    font-variation-settings: 'wght' var(--display-heading-weight, 900);
+    color: var(--color-light);
+}
+
+.lander {
+    padding-block: var(--space-l-xl)
+}
+
+.lede {
+    font-size: var(--size-step-1);
+    font-family: var(--font-lede);
+}
+
+.container {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+}
+
+.flow > * + * {
+    margin-top:var(--flow-space, var(--space))
+}
+
+.text-step-5 {
+    font-size:clamp(4.21rem, calc(1.67rem + 12.68vw), 11.18rem)
+}
+
+.text-step-0 {
+    font-size:clamp(1rem, calc(.91rem + .45vw), 1.25rem)
+}
