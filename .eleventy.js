@@ -1,4 +1,8 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+
 module.exports = config => {
+    config.addPlugin(eleventyNavigationPlugin);
+
     config.addPassthroughCopy('./src/fonts/');
     config.addPassthroughCopy('./src/images/');
 
@@ -7,6 +11,7 @@ module.exports = config => {
             input: 'src',
             output: 'dist'
         },
-        passthroughFileCopy: true
+        passthroughFileCopy: true,
+        htmlTemplateEngine: "njk"
     };
 }
