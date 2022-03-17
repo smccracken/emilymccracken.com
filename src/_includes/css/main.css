@@ -64,7 +64,7 @@ button, input, select, textarea {
     font-weight: normal;
     font-stretch: normal;
     letter-spacing: -.01em;
-    src: url("/fonts/BrandonTextRegular.woff2") format("woff2"), url("/fonts/BrandonTextRegular.woff?v=1643405670") format("woff"); 
+    src: url("/fonts/BrandonTextRegular.woff2") format("woff2"), url("/fonts/BrandonTextRegular.woff?v=1643405670") format("woff");
 }
 
 :root {
@@ -88,8 +88,9 @@ button, input, select, textarea {
 
 body {
     color: var(--color-white);
-    font-family: 'BrandonText', Helvetica, sans-serif;
     background-color: var(--color-blue-dark);
+    font-family: var(--font-base);
+
     background-image: linear-gradient(
       330deg,
       hsl(240deg 100% 20%) 0%,
