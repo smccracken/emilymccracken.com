@@ -25,12 +25,24 @@
   </head>
   <body>
     <main tabindex="-1" id="main-content">
+      <header>
+        {% set navPages = collections.all | eleventyNavigation %}
+        <nav aria-label="Primary">
+          <ul>
+          {%- for entry in navPages %}
+            <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            </li>
+          {%- endfor %}
+          </ul>
+        </nav>
+      </header>
       <article class="lander container flow">
         <header>
           <h1 class="display-heading">{{ title }}</h1>
-          <p class="lede">An illustrator, <a href="https://www.chocolatesculptress.com" title="My chocolate art and showpieces">chocolate sculptress</a>, and aspiring art teacher in northern Vermont.</p>
+          <p class="lede">{{ lede }}</p>
         </header>
-        <p class="text-step-0 flow">A work in progress</p>
+        {{ layoutContent | safe }}
       </article>
     </main>
   </body>
