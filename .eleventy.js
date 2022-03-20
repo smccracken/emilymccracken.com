@@ -1,5 +1,5 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const CleanCSS = require("clean-css");
+const cleanCSS = require("clean-css");
 
 module.exports = config => {
     config.addPlugin(eleventyNavigationPlugin);
@@ -8,7 +8,7 @@ module.exports = config => {
     config.addPassthroughCopy('./src/images/');
 
     config.addFilter("cssmin", function(code) {
-        return new CleanCSS({}).minify(code).styles;
+        return new cleanCSS({}).minify(code).styles;
       });
 
     return {

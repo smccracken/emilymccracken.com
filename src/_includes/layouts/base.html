@@ -3,44 +3,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Emily McCracken, Vermont Artist and Teacher</title>
-    <link rel="canonical" href="https://emilymccracken.com/">
-
-    <meta property="og:site_name" content="Emily McCracken">
-    <meta property="og:title" content="Emily McCracken, Vermont Artist and Teacher">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://emilymccracken.com/">
-    <meta property="og:image" content="https://emilymccracken.com/images/social-share.png"/>
-
-    <meta name="twitter:image" content="https://emilymccracken.com/social-share.png"/>
-    <meta property="og:image:alt" content="Vermont Artist Emily McCracken"/>
-    <meta name="twitter:image:alt" content="Vermont Artist Emily McCracken"/>
-
-    <meta name="description" content="Emily McCracken is an illustrator, chocolate sculptress, and aspiring art teacher in northern Vermont."/>
-    <meta name="twitter:description" content="Emily McCracken is an illustrator, chocolate sculptress, and aspiring art teacher in northern Vermont."/>
-    <meta property="og:description" content="Emily McCracken is an illustrator, chocolate sculptress, and aspiring art teacher in northern Vermont."/>
+    {% include 'blocks/meta.njk' %}
     {% set css %}
-      {% include "css/main.css" %}
+      {% include "css/reset.css" %}
+      {% include "css/tokens.css" %}
+      {% include "css/base.css" %}
+      {% include "css/utilities/flow.css" %}
+      {% include "css/utilities/layout.css" %}
     {% endset %}
     <style>{{ css | cssmin | safe }}</style>
   </head>
-  <body>
-    <header class="site-header container">
-      <div class="flex flex__space">
-        {% set navPages = collections.all | eleventyNavigation %}
-        <a href="/" class="site-header__brand font-heading"><span class="font-bigger">Emily</span> McCracken</a>
-        <nav class="site-header__nav" aria-label="Primary">
-          <ul class=" flex flex__close">
-          {%- for entry in navPages %}
-            <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
-              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-            </li>
-          {%- endfor %}
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main tabindex="-1" id="main-content" class="container">
+  <body class="{{ templateClass }}">
+    {% include 'blocks/site-header.html' %}
+    <main tabindex="-1" id="main-content">
+    <div class="container">
       <article class="lander flow">
         <header>
           <h1 class="display-heading">{{ title }}</h1>
@@ -48,6 +24,7 @@
         </header>
         {{ layoutContent | safe }}
       </article>
+    </div>
     </main>
   </body>
 </html>

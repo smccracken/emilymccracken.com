@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Rotundo";
+  src: url("/fonts/Rotundo-Regular.woff2") format("woff2"), url("/fonts/Rotundo-Regular.woff") format("woff");
+  font-display: block;
+  font-weight: 400
+}
+
+@font-face {
+  font-family: "BrandonText";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: -.01em;
+  src: url("/fonts/BrandonTextRegular.woff2") format("woff2"), url("/fonts/BrandonTextRegular.woff?v=1643405670") format("woff");
+}

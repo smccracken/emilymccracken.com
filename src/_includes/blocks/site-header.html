@@ -1,0 +1,13 @@
+<header class="site-header container">
+  <div class="flex flex__space">
+    {% set navPages = collections.all | eleventyNavigation %}
+    <a href="/" class="site-header__brand font-heading"><span class="font-bigger">Emily</span> McCracken</a>
+    <nav class="site-header__nav" aria-label="Primary">
+      <ul class=" flex flex__close">
+      {%- for entry in navPages %}
+        <li{% if entry.url == page.url %} class="my-active-class"{% endif %}><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+      {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

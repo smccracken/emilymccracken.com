@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr min(75ch, calc(100% - 2rem)) 1fr;
+}
+
+.container > * {
+  grid-column: 2;
+}
+
+.full-bleed {
+  width: 100%;
+  grid-column: 1 / 4;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex__space {
+    justify-content: space-between;
+}
+
+.flex__close {
+  gap: 0 var(--size-step-1);
+}

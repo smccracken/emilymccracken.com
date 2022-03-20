@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --watch"
   },
   "repository": {
     "type": "git",
