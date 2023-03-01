@@ -1,8 +1,9 @@
 :root {
   --color-light: rgb(247, 247, 247);
   --color-gray: rgb(164, 164, 164);
-  --color-dark: rgb(25, 25, 25);
-  --color-blue: hsl(203, 100%, 33%);
+  --color-dark: rgba(25, 25, 25, 1);
+  --color-blue: hsla(203, 100%, 33%, 1);
+  --color-yellow: hsla(46, 63%, 74%, 1);
   --color-orange: #DE7931;
   --font-base: 'Lora', 'Georgia', serif;
   --font-heading: 'Merriweather', 'Lora', 'Georgia', serif;
@@ -80,6 +81,29 @@ p, li {
   font-size: 1.5em;
   font-weight: 200;
   line-height: var(--line-height);
+}
+
+p {
+  isolation: isolate;
+}
+
+@keyframes mark {
+  to {
+    background-position: -100%;
+  } 
+}
+
+mark {
+  position: relative;
+  transition: background-position 0.4s;
+  padding: 0.25em 0.5em;
+  margin: 0 -0.5em;
+  background-blend-mode: multiply;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(241, 227, 33, 0.9) 50%);
+  background-position: 0;
+  background-size: 200%;
+  mix-blend-mode: multiply;
+  animation: mark linear 1s forwards;
 }
 
 a {
