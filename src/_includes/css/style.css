@@ -781,12 +781,16 @@ a.spectrum:hover {
   height: auto;
 }
 
+.doodle-not-yet {
+  max-width: 100%;
+  height: auto;
+  margin-top: -1rem;
+}
+
 @media( min-width: 720px ) {
   .doodle-not-yet {
     float: right;
-    width: 25rem;
-    height: auto;
-    margin-top: -1rem;
+    width: 350px; 
   }
 }
 
