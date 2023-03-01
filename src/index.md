@@ -5,55 +5,44 @@ permalink: '/'
 templateClass: home
 ---
 
-I'm a licensed Art Educator and currently seeking a teaching position within K&#8211;12 art. My passion for art is contagious and I believe in the power of being creative no matter what you're doing.
+I'm a licensed Art Educator and currently seeking a teaching position within K&#8211;12 art. My passion for creativity is contagious and I believe there are always opportunities to integrate art into our everyday lives.
 
-Over the last 20 years I worked for a chocolate company where I had the opportunity to create [chocolate sculptures](https://chocolatesculptress.com) for display in our stores. One of those sculptures was [featured on a Food Network special](https://chocolatesculptress.com/sculptures/cuckoo-clock/) and other [on display during an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/) at the Shelburne Museum.
+For the last 20 years I worked for a chocolate company where part of my job was to create [chocolate sculptures](https://chocolatesculptress.com) for display in our stores. Eventually one of those sculptures was [featured on a Food Network special](https://chocolatesculptress.com/sculptures/cuckoo-clock/) while another was [on display for an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/) at the Shelburne Museum.
 
-I'm proud of the joy that my sculptures brought to my community, particularly to children. I'd love the opportunity to continue bringing that joy as an educator.
-
-I'm a perpetual doodler, amateur baker, and lover of all-things-retro. My pun game is also very strong.
-
-Whether it's chocolate or crochet, I'd like to start sharing more of my creations and invite you to follow along:
+From chocolate to crochet, I'm always working on something. I'm a perpetual doodler, amateur baker, and retro treasure seeker. My pun game is also very strong.
 
 <div class="my-row goudy">
   <div class="col">
     <div class="col-section">
-      <h2 class="header">Find me online</h2>
+      <h2>Find me online</h2>
       <hr>
       <ul>
         <li class="item">
           <span>Photo updates</span>
           <span class="dots"></span>
           <span class="align-right">
-            <a class="orange" href="https://www.instagram.com/MissKrakenArt/">Instagram</a>
+            <a href="https://www.instagram.com/MissKrakenArt/">Instagram</a>
           </span>
         </li>
         <li class="item">
           <span>About my career</span>
           <span class="dots"></span>
           <span class="align-right">
-            <a class="orange" href="resume.pdf">Resume (PDF)</a>
-          </span>
-        </li>
-        <li class="item">
-          <span>Professional updates</span>
-          <span class="dots"></span>
-          <span class="align-right">
-            <a class="orange" href="https://www.linkedin.com/in/emilywmccracken">LinkedIn</a>
+            <a href="resume.pdf" title="View my Resume">Resume (PDF)</a> or <a href="https://www.linkedin.com/in/emilywmccracken">LinkedIn</a>
           </span>
         </li>
         <li class="item">
           <span>All things chocolate</span>
           <span class="dots"></span>
           <span class="align-right">
-            <a class="orange" href="https://www.chocolatesculptress.com">Chocolate Sculptress</a>
+            <a href="https://www.chocolatesculptress.com" title="My chocolate sculpture portfolio">Chocolate Sculptress</a>
           </span>
         </li>
         <li class="item">
           <span>Questions or comments</span>
           <span class="dots"></span>
           <span class="align-right">
-            <a class="orange" href="mailto:emilywjones@gmail.com">Contact me</a>
+            <a href="mailto:emilywjones@gmail.com">Contact me</a>
           </span>
         </li>
       </ul>

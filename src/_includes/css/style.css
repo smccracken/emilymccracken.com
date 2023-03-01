@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-html {
-     box-sizing: border-box;
-}
-
-body {
-    margin: auto; 
-    background-color: rgb(247, 247, 247);
-    font-family: 'Lora', serif;
-}
-
-/**
-*** SIMPLE GRID
-*** (C) ZACH COLE 2016
-**/
-
-/* UNIVERSAL */
 
 html,
 body {
@@ -28,16 +12,22 @@ body {
   font-size: 100%;
 }
 
-/* ROOT FONT STYLES */
+html {
+     box-sizing: border-box;
+}
 
-* {
-
+body {
+    margin: auto; 
+    background-color: rgb(247, 247, 247);
+    font-family: 'Lora', serif;
 }
 
 /* TYPOGRAPHY */
 
 h1 {
   font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Merriweather', 'Lora', 'Georgia', serif;
 }
 
 h2 {
@@ -64,6 +54,10 @@ p {
   font-size: 1.125rem;
   font-weight: 200;
   line-height: 1.8;
+}
+
+a {
+  color: hsl(203, 100%, 33%);
 }
 
 .font-light {
@@ -501,11 +495,6 @@ hr:after {
     top: -13px;
 }
 
-a {
-    text-decoration: none;
-    padding-bottom: 3px;
-}
-
 .card-description {
   color: black;
 }
@@ -732,10 +721,10 @@ a.spectrum:hover {
     }
 }
 
-.desk-drawing {
-    width: 75%;
-    height: 75%;
-    margin: auto;
+.profile,
+.rainbow {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .end {
@@ -783,7 +772,13 @@ a.spectrum:hover {
   margin-top: 1rem;
   border-radius: 50%;
   max-width: 350px;
+  height: auto;
   aspect-ratio: 1/1;
+}
+
+.rainbow {
+  max-width: 350px;
+  height: auto;
 }
 
 .hero {
