@@ -1,4 +1,5 @@
 *-lock.json
+.DS_store
 
 _archived
 node_modules

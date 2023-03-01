@@ -5,26 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% include 'blocks/meta.njk' %}
     {% set css %}
-      {% include "css/reset.css" %}
-      {% include "css/tokens.css" %}
-      {% include "css/base.css" %}
-      {% include "css/utilities/flow.css" %}
-      {% include "css/utilities/layout.css" %}
+      {% include "css/style.css" %}
     {% endset %}
     <style>{{ css | cssmin | safe }}</style>
   </head>
   <body class="{{ templateClass }}">
-    {% include 'blocks/site-header.html' %}
-    <main tabindex="-1" id="main-content">
-    <div class="container">
-      <article class="lander flow">
-        <header>
-          <h1 class="display-heading">{{ title }}</h1>
-          <p class="lede">{{ lede }}</p>
-        </header>
+    <div class="text-column">
+      <main tabindex="-1" id="main">
+        <div class="center">
+          <img class="profile" width="500" alt="An illustrated portrait of Emily smiling while wearing retro-shaped dark rimmed glasses" src="images/emily-illustration.jpg">
+        </div>
+        <h1><b>Hi there!</b> I'm&nbsp;Emily, an aspiring art teacher from northern&nbsp;Vermont.</h1>
         {{ layoutContent | safe }}
-      </article>
+      </main>
     </div>
-    </main>
   </body>
 </html>
