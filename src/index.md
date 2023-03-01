@@ -1,8 +1,7 @@
 ---
 title: "Hi there, I'm Emily!"
-layout: 'layouts/base.html'
+layout: 'layouts/home.njk'
 permalink: '/'
-templateClass: home
 ---
 
 I'm a licensed Art Educator and currently seeking a teaching position within K&#8211;12 art. My passion for creativity is contagious and I believe there are always opportunities to integrate art into our everyday lives.
