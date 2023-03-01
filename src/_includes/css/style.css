@@ -781,10 +781,13 @@ a.spectrum:hover {
   height: auto;
 }
 
-.doodle-not-yet {
-  float: right;
-  width: 35%;
-  height: auto;
+@media( min-width: 720px ) {
+  .doodle-not-yet {
+    float: right;
+    width: 25rem;
+    height: auto;
+    margin-top: -1rem;
+  }
 }
 
 .hero {

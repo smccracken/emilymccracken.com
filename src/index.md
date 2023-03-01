@@ -5,16 +5,15 @@ permalink: '/'
 templateClass: home
 ---
 
-<p>
-  <img src="images/doodle-not-yet.png" width="750" height="700" loading="lazy" class="doodle-not-yet" alt="A smiling illustrated sun rising from the lower right hand corner, the message says 'Not yet, but you will'" />
-  I'm a licensed Art Educator and currently seeking a teaching position within K&#8211;12 art. My passion for creativity is contagious and I believe there are always opportunities to integrate art into our everyday lives.
-</p>
+I'm a licensed Art Educator and currently seeking a teaching position within K&#8211;12 art. My passion for creativity is contagious and I believe there are always opportunities to integrate art into our everyday lives.
 
-For the last 20 years I worked for a chocolate company where part of my job was to create [chocolate sculptures](https://chocolatesculptress.com) for display in our stores. Eventually one of those sculptures was [featured on a Food Network special](https://chocolatesculptress.com/sculptures/cuckoo-clock/) while another was [on display for an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/) at the Shelburne Museum.
+<img src="images/doodle-not-yet.png" width="550" height="513" loading="lazy" class="doodle-not-yet" alt="A smiling illustrated sun rising from the lower right hand corner, the message says 'Not yet, but you will'" /> 
 
+For the last 20 years I worked for a chocolate company where part of my job was to create [chocolate sculptures](https://chocolatesculptress.com) for display in our stores.
 
+One of those sculptures was [featured on a Food Network special](https://chocolatesculptress.com/sculptures/cuckoo-clock/) while another was [on display for an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/) at the Shelburne Museum.
 
-From chocolate to crochet, I'm always working on something. I'm a perpetual doodler, amateur baker, and retro treasure seeker. My pun game is also very strong.
+From chocolate to crochet, I'm always working on something &#8212; I'm a perpetual doodler, amateur baker, and retro treasure seeker. My pun game is also very strong.
 
 <div class="my-row">
   <div class="col">
