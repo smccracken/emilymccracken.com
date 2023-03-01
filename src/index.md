@@ -4,7 +4,7 @@ layout: 'layouts/home.njk'
 permalink: '/'
 ---
 
-I'm an accomplished artist and licensed art educator with a contagious enthusiasm for all things creative. <mark>I'm currently seeking a teaching position within K&#8211;12 art in northern Vermont.</mark>
+I'm an accomplished artist and licensed art educator with a contagious enthusiasm for all things creative. <mark>I'm currently seeking a K&#8211;12 art teaching position in northern Vermont.</mark>
 
 <img src="images/doodle-not-yet.png" width="550" height="513" loading="lazy" class="doodle-not-yet" alt="A smiling illustrated sun rising from the lower right hand corner, the message says 'Not yet, but you will'" /> 
 
@@ -12,7 +12,7 @@ For the last 20 years I worked at a chocolate company leading demonstrations, te
 
 One of those sculptures was [featured on the Food Network](https://chocolatesculptress.com/sculptures/cuckoo-clock/) while another was [part of an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/) at the Shelburne Museum.
 
-From chocolate to crochet, I'm always working on something &#8212; I'm a perpetual doodler, amateur baker, and retro treasure seeker. You'll also catch me laughing at any good pun.
+From chocolate to crochet, I'm always working on something &#8212; I'm a perpetual doodler, amateur baker, and retro treasure seeker. You'll always catch me laughing at a good pun.
 
 <hr>
 
