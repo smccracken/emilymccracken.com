@@ -781,6 +781,12 @@ a.spectrum:hover {
   height: auto;
 }
 
+.doodle-not-yet {
+  float: right;
+  width: 35%;
+  height: auto;
+}
+
 .hero {
   font-family: 'Merriweather', serif;
   font-weight: 900;
