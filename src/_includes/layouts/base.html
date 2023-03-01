@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% include 'blocks/meta.njk' %}
     {% set css %}
-      {% include "css/style.css" %}
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+    
+      {% include "css/reset.css" %}
+      {% include "css/base.css" %}
     {% endset %}
     <style>{{ css | cssmin | safe }}</style>
   </head>
-  <body class="{{ templateClass }}">
-    <div class="text-column">
-      <main tabindex="-1" id="main">
-        <div class="center">
-          <img class="profile" width="500" alt="An illustrated portrait of Emily smiling while wearing retro-shaped dark rimmed glasses" src="images/emily-illustration.jpg">
+  <body class="{{ templateClass }}">  
+    <main tabindex="-1" id="main">
+      <article class="d-flex d-flex__column flow">
+        <img class="profile center round" width="500" alt="An illustrated portrait of Emily smiling while wearing retro-shaped dark rimmed glasses" src="images/emily-illustration.jpg">
+        <div class="text-column flow">
+          <h1><b>Hi there!</b> I'm Emily, an aspiring art teacher from northern Vermont.</h1>
+          {{ layoutContent | safe }}
         </div>
-        <h1><b>Hi there!</b> I'm&nbsp;Emily, an aspiring art teacher from northern&nbsp;Vermont.</h1>
-        {{ layoutContent | safe }}
-        <div class="center">
-          <img width="630" height="680" loading="lazy" class="rainbow" alt="A hand-drawn boho inspired rainbow illustration. The colors are orange, yellow, and blue." src="images/rainbow-1.png">
-        </div>
-      </main>
-    </div>
+        <img class="rainbow center" width="630" height="680" loading="lazy" alt="A hand-drawn boho inspired rainbow illustration. The colors are orange, yellow, and blue." src="images/rainbow-1.svg">
+      </article>
+    </main>
   </body>
 </html>

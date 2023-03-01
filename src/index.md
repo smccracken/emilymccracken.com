@@ -15,41 +15,38 @@ One of those sculptures was [featured on a Food Network special](https://chocola
 
 From chocolate to crochet, I'm always working on something &#8212; I'm a perpetual doodler, amateur baker, and retro treasure seeker. My pun game is also very strong.
 
-<div class="my-row">
-  <div class="col">
-    <div class="col-section">
-      <h2>Find me online</h2>
-      <hr>
-      <ul>
-        <li class="item">
-          <span>Photo updates</span>
-          <span class="dots"></span>
-          <span class="align-right">
-            <a href="https://www.instagram.com/MissKrakenArt/">Instagram</a>
-          </span>
-        </li>
-        <li class="item">
-          <span>About my career</span>
-          <span class="dots"></span>
-          <span class="align-right">
-            <a href="resume.pdf" title="View my Resume">Resume (PDF)</a> or <a href="https://www.linkedin.com/in/emilywmccracken">LinkedIn</a>
-          </span>
-        </li>
-        <li class="item">
-          <span>All things chocolate</span>
-          <span class="dots"></span>
-          <span class="align-right">
-            <a href="https://www.chocolatesculptress.com" title="My chocolate sculpture portfolio">Chocolate Sculptress</a>
-          </span>
-        </li>
-        <li class="item">
-          <span>Questions or comments</span>
-          <span class="dots"></span>
-          <span class="align-right">
-            <a href="mailto:emilywjones@gmail.com">Contact me</a>
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
+<hr>
+
+<div class="d-flex d-flex__column flow">
+  <h2 class="center">Find me online</h2>
+  <ul class="dot-list" role="list">
+    <li class="d-flex">
+      <span>Photo updates</span>
+      <span class="dots" aria-hidden="true"></span>
+      <span class="align-right">
+        <a href="https://www.instagram.com/MissKrakenArt/">Instagram</a>
+      </span>
+    </li>
+    <li class="d-flex">
+      <span>About my career</span>
+      <span class="dots" aria-hidden="true"></span>
+      <span class="align-right">
+        <a href="resume.pdf" title="View my Resume">Resume (PDF)</a> or <a href="https://www.linkedin.com/in/emilywmccracken">LinkedIn</a>
+      </span>
+    </li>
+    <li class="d-flex">
+      <span>All things chocolate</span>
+      <span class="dots" aria-hidden="true"></span>
+      <span class="align-right">
+        <a href="https://www.chocolatesculptress.com" title="My chocolate sculpture portfolio">Chocolate Sculptress</a>
+      </span>
+    </li>
+    <li class="d-flex">
+      <span>Questions or comments</span>
+      <span class="dots" aria-hidden="true"></span>
+      <span class="align-right">
+        <a href="mailto:emilywjones@gmail.com">Contact me</a>
+      </span>
+    </li>
+  </ul>
 </div>
