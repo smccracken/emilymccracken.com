@@ -6,6 +6,7 @@ module.exports = config => {
 
     config.addPassthroughCopy('./src/fonts/');
     config.addPassthroughCopy('./src/images/');
+    config.addPassthroughCopy('./src/favicon*');
     config.addPassthroughCopy('./src/resume.pdf');
 
     config.addFilter("cssmin", function(code) {

@@ -1,14 +1,25 @@
 {
   "url": "https://emilymccracken.com",
   "name": "Emily McCracken, Art Teacher and Chocolate Sculptress",
+  "short_name": "Emily McCracken",
   "description": "Emily McCracken is a licensed Art Educator and former chocolate sculptress from northern Vermont.",
-  "keywords": "art, education, 3D animation, crafts, hand lettering, chocolate sculptures",
+  "keywords": "art, education, 3D animation, crafts, crochet, hand lettering, chocolate sculptures",
   "social": {
-      "twitter": "https://twitter.com/scottmccracken",
-      "instagram": "https://instagram.com/scottmccracken",
-      "github": "https://github.com/smccracken",
-      "codepen": "https://codepen.io/scottmccracken",
-      "dribbble": "https://dribbble.com/scottmccracken",
-      "linkedin": "https://www.linkedin.com/in/scottmccracken"
-  }
+      "linkedin": "https://www.linkedin.com/in/emilywmccracken/",
+      "instagram": "https://www.instagram.com/MissKrakenArt/",
+      "dribbble": "https://dribbble.com/emilymccracken"
+  },
+  "theme_color": "#0068a8",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type":"image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type":"image/png"
+    }
+  ]
 }

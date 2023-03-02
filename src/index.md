@@ -22,17 +22,17 @@ From chocolate to crochet, I'm happiest when working on something with my hands 
   <h2 class="center">Find me online</h2>
   <ul class="dot-list" role="list">
     <li class="d-flex">
-      <span>Photo updates</span>
+      <span>Design updates</span>
       <span class="dots" aria-hidden="true"></span>
       <span class="align-right">
-        <a href="https://www.instagram.com/MissKrakenArt/">Instagram</a>
+        <a href="{{ site.social.instagram }}">Instagram</a> or <a href="{{ site.social.dribbble }}">Dribbble</a>
       </span>
     </li>
     <li class="d-flex">
       <span>About my career</span>
       <span class="dots" aria-hidden="true"></span>
       <span class="align-right">
-        <a href="resume.pdf" title="View my Resume">Resume (PDF)</a> or <a href="https://www.linkedin.com/in/emilywmccracken">LinkedIn</a>
+        <a href="resume.pdf" title="View my Resume">Resume (PDF)</a> or <a href="{{ site.social.linkedin }}">LinkedIn</a>
       </span>
     </li>
     <li class="d-flex">
