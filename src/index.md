@@ -16,7 +16,7 @@ Working with chocolate has been a blast, but it was time for a change. I've alwa
 
 From chocolate to crochet, I'm happiest when working on something with my hands &#8212; I'm a perpetual doodler, amateur baker, and retro treasure seeker. You'll always catch me laughing at a good pun.
 
-<hr>
+{% include "blocks/hr.njk" %}
 
 <div class="d-flex d-flex__column flow">
   <h2 class="center">Find me online</h2>

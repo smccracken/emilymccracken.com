@@ -96,8 +96,7 @@ p {
 mark {
   position: relative;
   transition: background-position 0.4s;
-  padding: 0.25em 0.5em;
-  margin: 0 -0.5em;
+  padding: 0.25em 0;
   background-blend-mode: multiply;
   background: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(241, 227, 33, 0.9) 50%);
   background-position: 0;
@@ -131,6 +130,13 @@ hr:after {
   padding: 0 4px;
   position: relative;
   top: -15px;
+}
+
+svg[role="separator"] {
+  display: block;
+  max-width: 10em;
+  height: auto;
+  margin: 2em auto;
 }
 
 .center {
