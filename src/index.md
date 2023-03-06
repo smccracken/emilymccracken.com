@@ -4,15 +4,15 @@ layout: 'layouts/home.njk'
 permalink: '/'
 ---
 
-I'm an accomplished artist and licensed art educator with a contagious enthusiasm for all things crafty. <mark>I'm currently seeking a K&#8211;12 art teaching position in northern Vermont.</mark>
+I'm a licensed art educator that is <mark>currently seeking a K&#8211;12 art teaching position in northern Vermont.</mark> I'm an accomplished artist with a contagious enthusiasm for all things crafty.
 
 <img src="images/doodle-not-yet.png" width="550" height="513" loading="lazy" class="doodle-not-yet" alt="A smiling illustrated sun rising from the lower right hand corner, the message says 'Not yet, but you will'" /> 
 
-For the last 20 years I worked at a chocolate company leading demonstrations, teaching chocolate making classes, and creating [chocolate sculptures](https://chocolatesculptress.com) for display in our stores.
+For the last 20 years I've worked at a chocolate company leading demonstrations, teaching classes, and creating retail specialty products. 
 
-One of those sculptures was [featured on the Food Network](https://chocolatesculptress.com/sculptures/cuckoo-clock/ "Giant Chocolate Cuckoo Clock on the Food Network") while another was [part of an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/ "Donut Shop Chocolate Sculpture on display at Shelburne Museum") at the Shelburne Museum.
+But what I'm most proud of is my [chocolate sculptures](https://chocolatesculptress.com) that were put on display in the stores. One of them was even [featured on the Food Network](https://chocolatesculptress.com/sculptures/cuckoo-clock/ "Giant Chocolate Cuckoo Clock on the Food Network") while another was [part of an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/ "Donut Shop Chocolate Sculpture on display at Shelburne Museum") at the Shelburne Museum.
 
-Art teachers had a profound impact on me and their guideance is what allowed me to be able to make art out of chocolate. Now I’m hoping I can help kids find their creative spark. ✨
+Working with chocolate has been a blast, but it was time for a change. I've always been grateful for the guidance of my art teachers and how they showed me to integreate art into any job. Now I’m hoping I can help kids find their creative spark. ✨
 
 From chocolate to crochet, I'm happiest when working on something with my hands &#8212; I'm a perpetual doodler, amateur baker, and retro treasure seeker. You'll always catch me laughing at a good pun.
 
