@@ -2,7 +2,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const Image = require("@11ty/eleventy-img");
 const cleanCSS = require("clean-css");
 
-async function imageShortcode(src, classes, alt, sizes = "100vw") {
+async function imageShortcode(src, classes, alt, sizes="100vw", loading="lazy") {
     if (alt === undefined) {
         throw new Error('Missing \'alt\` on responsiveimae from: ${src}');
     }
@@ -26,7 +26,7 @@ async function imageShortcode(src, classes, alt, sizes = "100vw") {
                 width="${highsrc.width}"
                 height="${highsrc.height}"
                 alt="${alt}"
-                loading="lazy"
+                loading="${loading}"
                 decoding="async">
         </picture>`;
 }
