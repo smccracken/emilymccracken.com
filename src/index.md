@@ -4,17 +4,17 @@ layout: 'layouts/home.njk'
 permalink: '/'
 ---
 
-I'm a licensed art educator that is <mark>currently seeking a K&#8211;12 art teaching position in northern Vermont</mark> where I can share my contagious enthusiasm for all things crafty.
+I'm a licensed art educator and <mark>seeking a position within K&#8211;12 art in northern Vermont</mark> where I can share my contagious enthusiasm for all things crafty.
 
-<img src="images/doodle-not-yet.png" width="550" height="513" loading="lazy" class="doodle-not-yet" alt="A smiling illustrated sun rising from the lower right hand corner, the message says 'Not yet, but you will'" /> 
+{% image "./src/images/doodle-not-yet.png", "doodle-not-yet", "A smiling illustrated sun rising from the lower right hand corner, the message says 'Not yet, but you will'" %}
 
-For the last 20 years I've worked at a chocolate company &#8212; leading demonstrations, teaching classes, and creating retail specialty products. 
+Previously I worked at a chocolate company for 20 years &#8212; leading demonstrations, teaching classes, and creating retail specialty products. 
 
-I also created [chocolate sculptures](https://chocolatesculptress.com) for display in our stores or local art exhibits. My proudest moments came when one of those sculptures was [featured on the Food Network](https://chocolatesculptress.com/sculptures/cuckoo-clock/ "Giant Chocolate Cuckoo Clock on the Food Network") while another was [selected as part of an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/ "Donut Shop Chocolate Sculpture on display at Shelburne Museum") at the Shelburne Museum.
+My happiest moments came while integrating art into my job. Specifically [chocolate sculptures](https://chocolatesculptress.com) that were displayed in our stores, [featured on the Food Network](https://chocolatesculptress.com/sculptures/cuckoo-clock/ "Giant Chocolate Cuckoo Clock on the Food Network"), and [selected as part of an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/ "Donut Shop Chocolate Sculpture on display at Shelburne Museum") at the Shelburne Museum.
 
-Working with chocolate has been a blast, but it was time for a change. I've always been grateful for the guidance of my art teachers and how they showed me that I can integreate art into any job. Now I’m hoping I can help kids find their creative spark. ✨
+While working with chocolate was a blast, it was time for a change. I've always been grateful for the guidance of my art teachers and now I’m hoping I can help kids find their creative spark. ✨
 
-From chocolate to crochet, I'm happiest when working with my hands &#8212; I'm a perpetual doodler, amateur baker, and retro treasure seeker. You'll always catch me laughing at a good pun.
+From chocolate to crochet, I'm best when working with my hands &#8212; I'm a perpetual doodler, amateur baker, and retro treasure seeker. You'll always catch me laughing at a good pun.
 
 {% include "blocks/hr.njk" %}
 

@@ -3,9 +3,9 @@
 
 {% block content %}
 <article class="d-flex d-flex__column flow">
-  <img class="profile center round" width="500" alt="An illustrated portrait of Emily smiling while wearing retro-shaped dark rimmed glasses" src="images/emily-illustration.jpg">
+  {% image "./src/images/emily-illustration.jpg", "profile", "An illustrated portrait of Emily smiling while wearing retro-shaped dark rimmed glasses" %}
   <div class="text-column flow">
-    <h1>Hi there! I'm Emily, an aspiring art teacher and former chocolate sculptress.</h1>
+    <h1>Hi there! I'm Emily.<br> An art teacher and former chocolate sculptress.</h1>
     {{ layoutContent | safe }}
   </div>
 </article>
