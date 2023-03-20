@@ -4,9 +4,9 @@ layout: 'layouts/home.njk'
 permalink: '/'
 ---
 
-I'm a licensed art educator and <mark>seeking a position within K&#8211;12 art in northern Vermont</mark> where I can share my contagious enthusiasm for all things crafty.
+I'm a licensed art educator that is <mark>seeking a position within K&#8211;12 art in northern Vermont</mark> where I can share my contagious enthusiasm for all things crafty.
 
-{% image "./src/images/doodle-not-yet.png", "doodle-not-yet", "A smiling illustrated sun rising from the lower right hand corner, the message says 'Not yet, but you will'" %}
+{% imagePlaceholder "./src/images/doodle-not-yet.png", "doodle-not-yet", "A smiling illustrated sun rising from the lower right hand corner, the message says 'Not yet, but you will'" %}
 
 Previously I worked at a chocolate company for 20 years &#8212; leading demonstrations, teaching classes, and creating retail specialty products. 
 
@@ -25,14 +25,14 @@ From chocolate to crochet, I'm best when working with my hands &#8212; I'm a per
       <span>Design updates</span>
       <span class="dots" aria-hidden="true"></span>
       <span class="align-right">
-        <a href="{{ site.social.instagram }}">Instagram</a> or <a href="{{ site.social.dribbble }}">Dribbble</a>
+        <a href="{{ meta.social.instagram }}">Instagram</a> or <a href="{{ meta.social.dribbble }}">Dribbble</a>
       </span>
     </li>
     <li class="d-flex">
       <span>About my career</span>
       <span class="dots" aria-hidden="true"></span>
       <span class="align-right">
-        <a href="resume.pdf" title="View my Resume">Resume (PDF)</a> or <a href="{{ site.social.linkedin }}">LinkedIn</a>
+        <a href="resume.pdf" title="View my Resume">Resume (PDF)</a> or <a href="{{ meta.social.linkedin }}">LinkedIn</a>
       </span>
     </li>
     <li class="d-flex">

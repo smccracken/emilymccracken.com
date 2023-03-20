@@ -19,5 +19,8 @@
     <main tabindex="-1" id="main">
       {% block content %}{% endblock %}
     </main>
+    <footer>
+      &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.short_name }} <small>{% packageVersion %}</small> </a>
+    </footer>
   </body>
 </html>

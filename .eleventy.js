@@ -1,55 +1,65 @@
+// get package.json
+const packageVersion = require('./package.json').version;
+
+// import filters
+const {
+    limit,
+    toHtml,
+    mdInline
+} = require('./config/filters/index.js');
+
+// import shortcodes
+const {
+    imageShortcodePlaceholder,
+} = require('./config/shortcodes/index.js');
+
+// plugins
+const markdownLib = require('./config/plugins/markdown.js');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const Image = require("@11ty/eleventy-img");
 const cleanCSS = require("clean-css");
-
-async function imageShortcode(src, classes, alt, sizes="100vw", loading="lazy") {
-    if (alt === undefined) {
-        throw new Error('Missing \'alt\` on responsiveimae from: ${src}');
-    }
-
-    let metadata = await Image(src, {
-        width: [300, 600],
-        formats: ['webp', 'jpeg'],
-        outputDir: "./dist/images/",
-        urlPath: "/images/"
-    });
-
-    let lowsrc = metadata.jpeg[0];
-    let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
-
-    return `<picture class="${classes}">
-        ${Object.values(metadata).map(imageFormat => {
-            return `    <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
-        }).join("\n")}
-            <img
-                src="${lowsrc.url}"
-                width="${highsrc.width}"
-                height="${highsrc.height}"
-                alt="${alt}"
-                loading="${loading}"
-                decoding="async">
-        </picture>`;
-}
+const {slugifyString} = require('./config/utils');
 
 module.exports = config => {
-    config.addPlugin(eleventyNavigationPlugin);
-    config.addAsyncShortcode("image", imageShortcode);
+    // 	--------------------- Custom Watch Targets -----------------------
+    config.addWatchTarget('./src/assets');
+    config.addWatchTarget('./utils/*.js');
 
-    config.addPassthroughCopy('./src/fonts/');
-    config.addPassthroughCopy('./src/images/');
-    config.addPassthroughCopy('./src/favicon*');
-    config.addPassthroughCopy('./src/resume.pdf');
+    // --------------------- layout aliases -----------------------
+    config.addLayoutAlias('base', 'base.njk');
+    config.addLayoutAlias('collection', 'collection.njk');
+    config.addLayoutAlias('home', 'home.njk');
 
+    // ---------------------  Custom filters -----------------------
+    config.addFilter('limit', limit);
+    config.addFilter('toHtml', toHtml);
+    config.addFilter('md', mdInline);
     config.addFilter("cssmin", function(code) {
         return new cleanCSS({}).minify(code).styles;
       });
 
+    // --------------------- Custom shortcodes ---------------------
+    config.addAsyncShortcode("imagePlaceholder", imageShortcodePlaceholder);
+    config.addShortcode('year', () => `${new Date().getFullYear()}`); 
+    config.addShortcode('packageVersion', () => `v${packageVersion}`);
+
+    // --------------------- Plugins ---------------------
+    config.addPlugin(eleventyNavigationPlugin);
+
+    // --------------------- Passthrough File Copy ---------------------
+    ['./src/fonts/', './src/images/', './src/favicon*', './src/resume.pdf'].forEach(path =>
+        config.addPassthroughCopy(path)
+    );
+
     return {
+        // Pre-process *.md, *.html and global data files files with: (default: `liquid`)
+        markdownTemplateEngine: 'njk',
+        htmlTemplateEngine: 'njk',
+        dataTemplateEngine: 'njk',
+
         dir: {
             input: 'src',
-            output: 'dist'
-        },
-        passthroughFileCopy: true,
-        htmlTemplateEngine: "njk"
+            output: 'dist',
+            includes: '_includes'
+        }
     };
 }

@@ -18,12 +18,22 @@
     "url": "https://github.com/smccracken/emilymccracken.com/issues"
   },
   "homepage": "https://github.com/smccracken/emilymccracken.com#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-navigation": "^0.3.5",
-    "clean-css": "^5.2.4"
-  },
   "dependencies": {
-    "@11ty/eleventy-img": "^3.0.0"
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-img": "^3.0.0",
+    "@11ty/eleventy-navigation": "^0.3.5"
+  },
+  "devDependencies": {
+    "@toycode/markdown-it-class": "^1.2.4",
+    "clean-css": "^5.2.4",
+    "html-minifier-terser": "^7.1.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-anchor": "^8.6.5",
+    "markdown-it-emoji": "^2.0.2",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-link-attributes": "^4.0.1",
+    "markdown-it-mark": "^3.0.1",
+    "markdown-it-prism": "^2.3.0"
   }
 }
