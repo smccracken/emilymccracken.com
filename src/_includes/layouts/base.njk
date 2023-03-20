@@ -16,11 +16,11 @@
     </style>
   </head>
   <body class="{{ templateClass }}">  
-    <main tabindex="-1" id="main">
+    <main tabindex="-1" id="main" class="flow" style="--flow-space: 3rem;">
       {% block content %}{% endblock %}
     </main>
-    <footer>
-      &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.short_name }} <small>{% packageVersion %}</small> </a>
+    <footer class="d-flex d-flex__column">
+      <p class="center">&copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.short_name }}</a></p>
     </footer>
   </body>
 </html>

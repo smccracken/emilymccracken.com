@@ -116,6 +116,10 @@ mark {
   animation: mark linear 1s forwards;
 }
 
+body > footer {
+  margin-top: 3rem;
+}
+
 
 /* Flow */
 .flow > * + * {
@@ -160,6 +164,11 @@ svg[role="separator"] {
 /* Container */
 article {
   max-width: 68ch;
+  margin-inline: auto;
+}
+
+.container__wide {
+  max-width: 85ch;
   margin-inline: auto;
 }
 
@@ -258,4 +267,61 @@ picture {
 
 .round {
   border-radius: 50%;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+.image-grid .row-span-2 {
+  grid-row: auto / span 2;
+}
+
+.image-grid .row-span-3 {
+  grid-row: auto / span 3;
+}
+
+.image-grid .col-span-2 {
+  grid-column: auto / span 2;
+}
+
+.image-grid img {
+  border: 1px solid #ccc;
+  max-width: 100%;
+  border: 2px solid black;
+  box-shadow: 4px 4px rgb(188, 210, 203);
+  padding: 1em; 
+}
+
+.image-grid img {
+  height: auto;
+}
+
+.thumb-grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@media( min-width: 700px ) {
+  .thumb-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.thumb-grid article {
+  position: relative;
+  border: 2px solid black;
+  box-shadow: 4px 4px rgb(188, 210, 203);
+  padding: 1em; 
+}
+
+.thumb-grid picture {
+  max-height: 295px;
+  overflow: hidden;
+}
+
+.thumb-grid img {
+  height: auto;
 }
