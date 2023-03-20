@@ -1,3 +1,4 @@
+const dayjs = require('dayjs');
 const markdownLib = require('../plugins/markdown');
 const md = require('markdown-it')();
 
@@ -22,6 +23,9 @@ const toHtml = markdownString => {
  * @return {string|undefined}
  */
 
+/** Converts the given date string to ISO8610 format. */
+const toIsoString = dateString => dayjs(dateString).toISOString();
+
 const mdInline = (content, opts) => {
   if (!content) {
     return;
@@ -45,5 +49,6 @@ const mdInline = (content, opts) => {
 module.exports = {
   limit,
   toHtml,
+  toIsoString,
   mdInline
 };

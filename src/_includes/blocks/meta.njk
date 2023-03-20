@@ -1,11 +1,11 @@
-{%- set pageTitle = title + ' - ' + site.name %}
+{%- set pageTitle = title + ' - ' + meta.name %}
 
 {# For the homepage just use the site name as the title #}
 {%- if templateClass === "home" %}
-  {% set pageTitle = site.name %}
+  {% set pageTitle = meta.name %}
 {% endif %}
 
-{%- set currentUrl = site.url + page.url %}
+{%- set currentUrl = meta.url + page.url %}
 
 <title>{{ pageTitle }}</title>
 <link rel="canonical" href="{{ currentUrl }}" />
@@ -18,7 +18,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="generator" content="{{ eleventy.generator }}" />
 
-<meta property="og:site_name" content="{{ site.name }}" />
+<meta property="og:site_name" content="{{ meta.name }}" />
 <meta property="og:title" content="{{ pageTitle }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ currentUrl }}" />
@@ -28,6 +28,6 @@
 <meta property="og:image:alt" content="Vermont Artist Emily McCracken"/>
 <meta name="twitter:image:alt" content="Vermont Artist Emily McCracken"/>
 
-<meta name="description" content="{{ site.description }}"/>
-<meta name="twitter:description" content="{{ site.description }}"/>
-<meta property="og:description" content="{{ site.description }}"/>
+<meta name="description" content="{{ meta.description }}"/>
+<meta name="twitter:description" content="{{ meta.description }}"/>
+<meta property="og:description" content="{{ meta.description }}"/>

@@ -5,6 +5,7 @@ const packageVersion = require('./package.json').version;
 const {
     limit,
     toHtml,
+    toIsoString,
     mdInline
 } = require('./config/filters/index.js');
 
@@ -32,6 +33,7 @@ module.exports = config => {
     // ---------------------  Custom filters -----------------------
     config.addFilter('limit', limit);
     config.addFilter('toHtml', toHtml);
+    config.addFilter('toIsoString', toIsoString);
     config.addFilter('md', mdInline);
     config.addFilter("cssmin", function(code) {
         return new cleanCSS({}).minify(code).styles;

@@ -1,0 +1,18 @@
+---
+permalink: /site.webmanifest
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+{
+  "name": "{{ meta.name }} - {{ meta.description }}",
+  "short_name": "{{ meta.short_name }}",
+  "start_url": "{{ meta.url }}",
+  "icons":[
+    {% for icon in meta.icons %}
+      {"src": "{{ icon.src }}", "sizes": "{{ icon.sizes }}", "type": "{{ icon.type }}"}{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  "theme_color": "{{ meta.theme_color }}",
+  "background_color": "{{ meta.theme_color }}",
+  "display": "standalone"
+}

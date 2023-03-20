@@ -26,6 +26,7 @@
   "devDependencies": {
     "@toycode/markdown-it-class": "^1.2.4",
     "clean-css": "^5.2.4",
+    "dayjs": "^1.11.5",
     "html-minifier-terser": "^7.1.0",
     "markdown-it": "^13.0.1",
     "markdown-it-abbr": "^1.0.4",
