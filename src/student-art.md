@@ -19,3 +19,5 @@ I'm so proud of these art projects by my K-5 students! The projects have been in
   <div>{% imagePlaceholder "./src/images/student-art/observational-pumpkins-1.jpg", "", "" %}</div>
   <div>{% imagePlaceholder "./src/images/student-art/monster-portrait-2.jpg", "", "" %}</div>
 </div>
+
+Thanks so much for stopping by ✨ Here's some other collections you might be interested in&nbsp;&#8211;&nbsp;[my classroom](/classroom/) / [chocolate sculptures](/chocolate/)

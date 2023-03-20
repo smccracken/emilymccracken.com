@@ -10,7 +10,7 @@ I'm a licensed art educator that is <mark>seeking a position within K&#8211;12 a
 
 Previously I worked at a chocolate company for 20 years &#8212; leading demonstrations, teaching classes, and creating retail specialty products. 
 
-My happiest moments came while integrating art into my job. Specifically [chocolate sculptures](https://chocolatesculptress.com) that were displayed in our stores, [featured on the Food Network](https://chocolatesculptress.com/sculptures/cuckoo-clock/ "Giant Chocolate Cuckoo Clock on the Food Network"), and [selected as part of an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/ "Donut Shop Chocolate Sculpture on display at Shelburne Museum") at the Shelburne Museum.
+My happiest moments came while integrating art into my job. Specifically the [chocolate sculptures](https://chocolatesculptress.com) that were used in out stores, [featured on the Food Network](https://chocolatesculptress.com/sculptures/cuckoo-clock/ "Giant Chocolate Cuckoo Clock on the Food Network"), and [displayed as part of an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/ "Donut Shop Chocolate Sculpture on display at Shelburne Museum") at the Shelburne Museum.
 
 While working with chocolate was a blast, it was time for a change. I've always been grateful for the guidance of my art teachers and now I’m hoping I can help kids find their creative spark. ✨
 

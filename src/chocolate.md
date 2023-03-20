@@ -18,3 +18,5 @@ I wanted to find a way to integrate art into my job while working for a chocolat
 </div>
 
 View my [full portfolio of chocolate sculptures](https://chocolatesculptress.com).
+
+Thanks so much for stopping by ✨ Here's some other collections you might be interested in&nbsp;&#8211;&nbsp;[student art](/student-art/) / [my classroom](/classroom/)
