@@ -4,7 +4,7 @@ permalink: '/classroom/'
 layout: 'layouts/collection.njk'
 ---
 
-A sample of signs and scenes from my art classrooms.
+Art classrooms should be informative and inspirational, but also a lot of fun! My goal is to find the perfect blend to help spark creativity with the students.
 
 <div class="image-grid">
   <div class="col-span-2 row-span-2">{% imagePlaceholder "./src/images/classroom/mona-lisa-quiet.jpg", "", "" %}</div>
