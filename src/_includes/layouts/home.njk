@@ -2,71 +2,73 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-<article class="d-flex d-flex__column flow">
-  {% imagePlaceholder "./src/images/emily-illustration.jpg", "profile", "An illustrated portrait of Emily smiling while wearing retro-shaped dark rimmed glasses", "(min-width: 30em) 50vw, 100vw", "eager" %}
-  <div class="text-column flow">
-    <h1>Hi there! I'm Emily.<br> An art teacher and former chocolate sculptress.</h1>
-    {{ layoutContent | safe }}
-  </div>
-</article>
+<div class="flow" style="--flow-space: 3rem;">
+  <article class="d-flex d-flex__column flow">
+    {% imagePlaceholder "./src/images/emily-illustration.jpg", "profile", "An illustrated portrait of Emily smiling while wearing retro-shaped dark rimmed glasses", "(min-width: 30em) 50vw, 100vw", "eager" %}
+    <div class="text-column flow">
+      <h1>Hi there! I'm Emily.<br> An art teacher and former chocolate sculptress.</h1>
+      {{ layoutContent | safe }}
+    </div>
+  </article>
 
-<div class="container__wide d-flex d-flex__column flow">
-  <h2 class="center">Art Examples</h2>
-  <div class="thumb-grid">
-    <article>
-      <a href="/classroom/" class="flow">
-        {% imagePlaceholder "./src/images/classroom/dot-dot-sign.jpg", "", "" %}
-        <h3 style="font-size: inherit;">My Classroom &rarr;</h3>
-      </a>
-    </article>
-    <article>
-      <a href="/student-art/" class="flow">
-        {% imagePlaceholder "./src/images/student-art/monster-portrait-1.jpg", "", "" %}
-        <h3 style="font-size: inherit;">Student Art &rarr;</h3>
-      </a>
-    </article>
-    <article>
-      <a href="/chocolate/" class="flow">
-        {% imagePlaceholder "./src/images/chocolate/emily-chocolate-03.jpg", "", "" %}
-        <h3 style="font-size: inherit;">Chocolate Sculptures &rarr;</h3>
-      </a>
-    </article>
+  <div class="container__wide d-flex d-flex__column flow">
+    <h2 class="center">Art Examples</h2>
+    <div class="thumb-grid">
+      <article>
+        <a href="/classroom/" class="flow">
+          {% imagePlaceholder "./src/images/classroom/dot-dot-sign.jpg", "", "" %}
+          <h3 style="font-size: inherit;">My Classroom &rarr;</h3>
+        </a>
+      </article>
+      <article>
+        <a href="/student-art/" class="flow">
+          {% imagePlaceholder "./src/images/student-art/monster-portrait-1.jpg", "", "" %}
+          <h3 style="font-size: inherit;">Student Art &rarr;</h3>
+        </a>
+      </article>
+      <article>
+        <a href="/chocolate/" class="flow">
+          {% imagePlaceholder "./src/images/chocolate/emily-chocolate-03.jpg", "", "" %}
+          <h3 style="font-size: inherit;">Chocolate Sculptures &rarr;</h3>
+        </a>
+      </article>
+    </div>
   </div>
+
+  {% include "blocks/hr.njk" %}
+
+  <article class="d-flex d-flex__column flow">
+    <h2 class="center">Find me online</h2>
+    <ul class="dot-list" role="list">
+      <li class="d-flex">
+        <span>Design updates</span>
+        <span class="dots" aria-hidden="true"></span>
+        <span class="align-right">
+          <a href="{{ meta.social.instagram }}">Instagram</a> or <a href="{{ meta.social.dribbble }}">Dribbble</a>
+        </span>
+      </li>
+      <li class="d-flex">
+        <span>About my career</span>
+        <span class="dots" aria-hidden="true"></span>
+        <span class="align-right">
+          <a href="resume.pdf" title="View my Resume">Resume (PDF)</a> or <a href="{{ meta.social.linkedin }}">LinkedIn</a>
+        </span>
+      </li>
+      <li class="d-flex">
+        <span>All things chocolate</span>
+        <span class="dots" aria-hidden="true"></span>
+        <span class="align-right">
+          <a href="https://www.chocolatesculptress.com" title="My chocolate sculpture portfolio">Chocolate Sculptress</a>
+        </span>
+      </li>
+      <li class="d-flex">
+        <span>Questions or comments</span>
+        <span class="dots" aria-hidden="true"></span>
+        <span class="align-right">
+          <a href="mailto:emilywjones@gmail.com">Contact me</a>
+        </span>
+      </li>
+    </ul>
+  </article>
 </div>
-
-{% include "blocks/hr.njk" %}
-
-<article class="d-flex d-flex__column flow">
-  <h2 class="center">Find me online</h2>
-  <ul class="dot-list" role="list">
-    <li class="d-flex">
-      <span>Design updates</span>
-      <span class="dots" aria-hidden="true"></span>
-      <span class="align-right">
-        <a href="{{ meta.social.instagram }}">Instagram</a> or <a href="{{ meta.social.dribbble }}">Dribbble</a>
-      </span>
-    </li>
-    <li class="d-flex">
-      <span>About my career</span>
-      <span class="dots" aria-hidden="true"></span>
-      <span class="align-right">
-        <a href="resume.pdf" title="View my Resume">Resume (PDF)</a> or <a href="{{ meta.social.linkedin }}">LinkedIn</a>
-      </span>
-    </li>
-    <li class="d-flex">
-      <span>All things chocolate</span>
-      <span class="dots" aria-hidden="true"></span>
-      <span class="align-right">
-        <a href="https://www.chocolatesculptress.com" title="My chocolate sculpture portfolio">Chocolate Sculptress</a>
-      </span>
-    </li>
-    <li class="d-flex">
-      <span>Questions or comments</span>
-      <span class="dots" aria-hidden="true"></span>
-      <span class="align-right">
-        <a href="mailto:emilywjones@gmail.com">Contact me</a>
-      </span>
-    </li>
-  </ul>
-</article>
 {% endblock %}
