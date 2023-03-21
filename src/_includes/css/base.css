@@ -271,20 +271,7 @@ picture {
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
-}
-
-.image-grid .row-span-2 {
-  grid-row: auto / span 2;
-}
-
-.image-grid .row-span-3 {
-  grid-row: auto / span 3;
-}
-
-.image-grid .col-span-2 {
-  grid-column: auto / span 2;
 }
 
 .image-grid img {
@@ -307,6 +294,22 @@ picture {
 @media( min-width: 700px ) {
   .thumb-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-grid .row-span-2 {
+    grid-row: auto / span 2;
+  }
+
+  .image-grid .row-span-3 {
+    grid-row: auto / span 3;
+  }
+  
+  .image-grid .col-span-2 {
+    grid-column: auto / span 2;
   }
 }
 
