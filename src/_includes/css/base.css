@@ -1,8 +1,11 @@
 :root {
+  --color-base: hsl(60, 38%, 96%);
   --color-light: rgb(247, 247, 247);
   --color-gray: rgb(164, 164, 164);
-  --color-dark: rgb(35, 35, 35);
-  --color-blue: hsla(203, 100%, 33%, 1);
+  --color-dark: rgb(25, 25, 25);
+  --color-blue: hsla(216, 65%, 40%, 1);
+  --color-blue-dark: hsl(216, 65%, 18%);
+  --color-blue-light: hsl(216, 65%, 85%);
   --color-yellow: hsla(46, 63%, 74%, 1);
   --color-orange: #DE7931;
   --font-base: 'Lora', 'Georgia', serif;
@@ -26,7 +29,7 @@ body {
   font-family: var(--font-base);
   font-size: var(--side-step-0);
   line-height: var(--line-height);
-  background-color: var(--color-light);
+  background-color: var(--color-base);
   color: var(--color-dark);
 }
 
@@ -35,6 +38,7 @@ h1, h2, h3 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: var(--line-height-tight);
+  color: var(--color-blue-dark);
   text-wrap: balance;
 }
 
@@ -277,7 +281,7 @@ picture {
 .image-grid img {
   border: 1px solid #ccc;
   max-width: 100%;
-  border: 2px solid black;
+  border: 2px solid var(--color-blue-dark);
   box-shadow: 4px 4px rgb(188, 210, 203);
   padding: 1em; 
 }
@@ -315,8 +319,8 @@ picture {
 
 .thumb-grid article {
   position: relative;
-  border: 2px solid black;
-  box-shadow: 4px 4px rgb(188, 210, 203);
+  border: 2px solid var(--color-blue-dark);
+  box-shadow: 4px 4px var(--color-blue-light);
   padding: 1em; 
 }
 
