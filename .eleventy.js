@@ -6,7 +6,8 @@ const {
     limit,
     toHtml,
     toIsoString,
-    mdInline
+    mdInline,
+    minifyCss
 } = require('./config/filters/index.js');
 
 // import shortcodes
@@ -17,7 +18,6 @@ const {
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const cleanCSS = require("clean-css");
 const {slugifyString} = require('./config/utils');
 
 module.exports = config => {
@@ -36,9 +36,7 @@ module.exports = config => {
     config.addFilter('toHtml', toHtml);
     config.addFilter('toIsoString', toIsoString);
     config.addFilter('md', mdInline);
-    config.addFilter("cssmin", function(code) {
-        return new cleanCSS({}).minify(code).styles;
-      });
+    config.addFilter("cssmin", minifyCss);
 
     // --------------------- Custom shortcodes ---------------------
     config.addAsyncShortcode("imagePlaceholder", imageShortcodePlaceholder);

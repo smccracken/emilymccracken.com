@@ -1,3 +1,4 @@
+const CleanCSS = require('clean-css');
 const dayjs = require('dayjs');
 const markdownLib = require('../plugins/markdown');
 const md = require('markdown-it')();
@@ -46,9 +47,12 @@ const mdInline = (content, opts) => {
   return inline ? md.renderInline(content) : md.render(content);
 };
 
+const minifyCss = code => new CleanCSS({}).minify(code).styles;
+
 module.exports = {
   limit,
   toHtml,
   toIsoString,
-  mdInline
+  mdInline,
+  minifyCss
 };
