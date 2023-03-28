@@ -1,0 +1,9 @@
+{% extends 'layouts/base.njk' %}
+{% block content %}
+<article class="region">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">{{ title }}</h1>
+    {{ layoutContent | safe }}
+  </div>
+</article>
+{% endblock %}

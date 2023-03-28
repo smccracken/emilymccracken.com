@@ -29,6 +29,7 @@ module.exports = config => {
     config.addLayoutAlias('base', 'base.njk');
     config.addLayoutAlias('collection', 'collection.njk');
     config.addLayoutAlias('home', 'home.njk');
+    config.addLayoutAlias('page', 'page.njk');
 
     // ---------------------  Custom filters -----------------------
     config.addFilter('limit', limit);
