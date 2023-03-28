@@ -10,8 +10,8 @@ const imageShortcodePlaceholder = async (src, classes, alt, sizes="100vw", loadi
     let metadata = await Image(src, {
         widths: [400, 700, 1280],
         formats: ['webp', 'jpeg'],
-        outputDir: "./dist/images/",
-        urlPath: "/images/",
+        outputDir: "./dist/assets/images/",
+        urlPath: "/assets/images/",
         filenameFormat: function (id, src, width, format, options) {
             const extension = path.extname(src);
             const name = path.basename(src, extension);

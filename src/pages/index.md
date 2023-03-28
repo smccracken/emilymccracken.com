@@ -1,11 +1,11 @@
 ---
 title: "Hi there, I'm Emily!"
-layout: 'layouts/home.njk'
+layout: home
 permalink: '/'
 ---
 
 I'm a licensed art educator that is <mark>seeking a position within K&#8211;12 art in northern Vermont</mark> where I can share my contagious enthusiasm for all things crafty.
-{% imagePlaceholder "./src/images/doodle-not-yet.png", "doodle-not-yet", "A smiling illustrated sun rising from the lower right hand corner, the message says 'Not yet, but you will'" %}
+{% imagePlaceholder "./src/assets/images/doodle-not-yet.png", "doodle-not-yet", "A smiling illustrated sun rising from the lower right hand corner, the message says 'Not yet, but you will'" %}
 
 Previously I worked at a chocolate company where I lead demonstrations, taught classes, and created retail specialty products for 20 years.
 

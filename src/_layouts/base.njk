@@ -6,9 +6,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {% include 'blocks/meta.njk' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "partials/meta.njk" %}
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
@@ -17,10 +17,8 @@
   </head>
   <body class="{{ templateClass }}">  
     <main tabindex="-1" id="main">
-      {% block content %}{% endblock %}
+      {{ content | safe }}
     </main>
-    <footer class="d-flex d-flex__column">
-      <p class="center">&copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.short_name }}</a></p>
-    </footer>
+    {% include "partials/footer.njk" %}
   </body>
 </html>

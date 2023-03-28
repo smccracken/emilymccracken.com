@@ -27,9 +27,9 @@ module.exports = config => {
 
     // --------------------- layout aliases -----------------------
     config.addLayoutAlias('base', 'base.njk');
-    config.addLayoutAlias('collection', 'collection.njk');
-    config.addLayoutAlias('home', 'home.njk');
     config.addLayoutAlias('page', 'page.njk');
+    config.addLayoutAlias('home', 'home.njk');
+    config.addLayoutAlias('collection', 'collection.njk');
 
     // ---------------------  Custom filters -----------------------
     config.addFilter('limit', limit);
@@ -49,7 +49,7 @@ module.exports = config => {
     config.addPlugin(eleventyNavigationPlugin);
 
     // --------------------- Passthrough File Copy ---------------------
-    ['./src/fonts/', './src/images/', './src/favicon*', './src/resume.pdf'].forEach(path =>
+    ['./src/fonts/', './src/assets/images/', './src/favicon*', './src/resume.pdf'].forEach(path =>
         config.addPassthroughCopy(path)
     );
 
@@ -62,7 +62,8 @@ module.exports = config => {
         dir: {
             input: 'src',
             output: 'dist',
-            includes: '_includes'
+            includes: '_includes',
+            layouts: '_layouts'
         }
     };
 }

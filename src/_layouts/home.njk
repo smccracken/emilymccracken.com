@@ -1,13 +1,13 @@
-{% set templateClass = "home" %}
-{% extends 'layouts/base.njk' %}
+---
+layout: base
+---
 
-{% block content %}
 <div class="flow" style="--flow-space: 3rem;">
   <article class="d-flex d-flex__column flow">
-    {% imagePlaceholder "./src/images/emily-illustration.jpg", "profile", "An illustrated portrait of Emily smiling while wearing retro-shaped dark rimmed glasses", "(min-width: 30em) 50vw, 100vw", "eager" %}
+    {% imagePlaceholder "./src/assets/images/emily-illustration.jpg", "profile", "An illustrated portrait of Emily smiling while wearing retro-shaped dark rimmed glasses", "(min-width: 30em) 50vw, 100vw", "eager" %}
     <div class="text-column flow">
       <h1>Hi there! I'm Emily.<br> An art teacher and former chocolate sculptress.</h1>
-      {{ layoutContent | safe }}
+      {{ content | safe }}
     </div>
   </article>
 
@@ -16,26 +16,26 @@
     <div class="thumb-grid">
       <article>
         <a href="/classroom/" class="flow">
-          {% imagePlaceholder "./src/images/classroom/dot-dot-sign.jpg", "", "" %}
+          {% imagePlaceholder "./src/assets/images/classroom/dot-dot-sign.jpg", "", "" %}
           <h3 style="font-size: inherit;">My Classroom &rarr;</h3>
         </a>
       </article>
       <article>
         <a href="/student-art/" class="flow">
-          {% imagePlaceholder "./src/images/student-art/monster-portrait-1.jpg", "", "" %}
+          {% imagePlaceholder "./src/assets/images/student-art/monster-portrait-1.jpg", "", "" %}
           <h3 style="font-size: inherit;">Student Art &rarr;</h3>
         </a>
       </article>
       <article>
         <a href="/chocolate/" class="flow">
-          {% imagePlaceholder "./src/images/chocolate/emily-chocolate-03.jpg", "", "" %}
+          {% imagePlaceholder "./src/assets/images/chocolate/emily-chocolate-03.jpg", "", "" %}
           <h3 style="font-size: inherit;">Chocolate Sculptures &rarr;</h3>
         </a>
       </article>
     </div>
   </div>
 
-  {% include "blocks/hr.njk" %}
+  {% include "partials/hr.njk" %}
 
   <article class="d-flex d-flex__column flow">
     <h2 class="center">Find me online</h2>
@@ -71,4 +71,3 @@
     </ul>
   </article>
 </div>
-{% endblock %}
