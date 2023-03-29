@@ -102,6 +102,15 @@ a:hover {
   opacity: .8;
 }
 
+a.back-link span {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+a.back-link:hover span {
+  transform: translateX(-2px);
+}
+
 @keyframes mark {
   to {
     background-position: -100%;
@@ -320,9 +329,32 @@ picture {
 
 .thumb-grid article {
   position: relative;
+}
+
+.thumb-grid a {
+  display: block;
+  padding: 1em;
   border: 2px solid var(--color-blue-dark);
   box-shadow: 4px 4px var(--color-blue-light);
-  padding: 1em; 
+  height: 100%;
+  transition: all 0.2s;
+}
+
+.thumb-grid a span {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.thumb-grid a:hover,
+.thumb-grid a:focus {
+  background-color: #fff;
+  box-shadow: 6px 6px var(--color-blue-light);
+  opacity: 1;
+}
+
+.thumb-grid a:hover span,
+.thumb-grid a:focus span {
+  transform: translateX(2px);
 }
 
 .thumb-grid picture {
