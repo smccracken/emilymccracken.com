@@ -13,6 +13,7 @@ const {
 // import shortcodes
 const {
     imageShortcodePlaceholder,
+    liteYoutube
 } = require('./config/shortcodes/index.js');
 
 // plugins
@@ -42,6 +43,7 @@ module.exports = config => {
     config.addAsyncShortcode("imagePlaceholder", imageShortcodePlaceholder);
     config.addShortcode('year', () => `${new Date().getFullYear()}`); 
     config.addShortcode('packageVersion', () => `v${packageVersion}`);
+    config.addShortcode('youtube', liteYoutube);
 
     // --------------------- Plugins ---------------------
     config.addPlugin(eleventyNavigationPlugin);
