@@ -6,7 +6,7 @@ layout: collection
 
 I'm so proud of these art projects by my K-5 students! Some examples include art work inspired by portraits from Jean-Michel Basquiat, masks from Kimmy Cantrell, and food sculptures from Claes Oldenburg.
 
-<div class="image-grid">
+<div class="media-grid">
   {% imagePlaceholder "./src/assets/images/student-art/bird-portrait-1.jpg", "col-span-2 row-span-2", "A young artist's portrait of a blue jay in crayon. The jay is in front of a night sky filled with stars and a crescent moon." %}
   {% imagePlaceholder "./src/assets/images/student-art/monster-portrait-1.jpg", "", "A young artist's portrait of a friendly monster looking off to the side with its mouth opened in an oval. The monster is bright red on a green background." %}
   {% imagePlaceholder "./src/assets/images/student-art/letters-1.jpg", "", "A young artist drew their name in block letters on green and blue backgrounds, then cut the letters into squares and rearranged them to make an abstract art piece." %}

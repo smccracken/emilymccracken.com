@@ -6,7 +6,7 @@ layout: collection
 
 I wanted to find a way to integrate art into my job while working for a chocolate company. What a sweet success! 🍫
 
-<div class="image-grid">
+<div class="media-grid">
   <div class="col-span-2">{% imagePlaceholder "./src/assets/images/chocolate/emily-chocolate-01.jpg", "", "A large Easter chocolate sculpture depicting an underwater scene with a bunny riding in a submarine through a brown coral reef. A large octopus sits on the upper left of the reef." %}</div>
   <div>{% imagePlaceholder "./src/assets/images/chocolate/emily-chocolate-02.jpg", "", "A close-up of a chocolate bunny riding inside of an egg shaped submarine through a chocolate coral reef." %}</div>
   <div>{% imagePlaceholder "./src/assets/images/chocolate/emily-chocolate-04.jpg", "", "A close-up of a smiling chocolate whale, painted with blue colored cocoa butter, with 3 red hearts coming out of its spout." %}</div>

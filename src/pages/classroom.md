@@ -6,7 +6,7 @@ layout: collection
 
 I want my art classroom to be both informative and fun! The right blend is so important in order to create the best environment for sparking creativity in students.
 
-<div class="image-grid">
+<div class="media-grid">
   <div class="col-span-2 row-span-2">{% imagePlaceholder "./src/assets/images/classroom/mona-lisa-quiet.jpg", "", "An informational board in a classroom with a rainbow of coloirs around the edge. On the left are big letters spelling out A R T and on the right is a sign asking the kids if they are Mona Lisa Quiet" %}</div>
   <div class="row-span-3">{% imagePlaceholder "./src/assets/images/classroom/brushes-sign.jpg", "", "A painted sign asking kids to think of brushes as people by following three steps to avoid a bad hair (bristle) day: 1. Shampoo 2. Rinse and 3.Spike the Hair Up" %}</div>
   <div>{% imagePlaceholder "./src/assets/images/classroom/color-your-world.jpg", "", "A classroom sign with a blue background titled Color Your World. Large crayons in groups are being used to show primary versus secondary colors, and warn versus cool colors." %}</div>
