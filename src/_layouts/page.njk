@@ -2,9 +2,8 @@
 layout: base
 ---
 
-<article class="region">
-  <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
-    {{ content | safe }}
-  </div>
+<article class="d-flex d-flex__column flow">
+  <a href="/" class="back-link"><span aria-hidden="true">&larr; </span>Back Home</a>
+  <h1 class="gradient-text">{{ title }}</h1>
+  {{ content | safe }}
 </article>

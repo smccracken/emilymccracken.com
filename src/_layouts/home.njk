@@ -13,7 +13,7 @@ layout: base
 
   <article class="container__wide d-flex d-flex__column flow">
     <h2 class="center">Art Examples</h2>
-    <div class="thumb-grid">
+    <div class="thumb-grid" style="--flow-space: 2rem;">
       <article>
         <a href="/classroom/" class="flow">
           {% imagePlaceholder "./src/assets/images/classroom/dot-dot-sign.jpg", "", "" %}
@@ -35,22 +35,21 @@ layout: base
     </div>
   </article>
 
-  <article class="container__wide d-flex d-flex__column flow"  style="--flow-space: 5rem;">
+  <hr>
+
+  <article class="container__wide d-flex d-flex__column flow">
     <h2 class="center">In the Media</h2>
-    <div class="sidebar">
-      <div>
-        <ul>
-          <li>"<a href="https://shelburnemuseum.org/exhibition/sweet-tooth-art-dessert/">Sweet Tooth: The Art of Dessert</a>"<br> Shelburne Museum, September 2017</li>
-          <li>"<a href="https://www.trypticpress.com/emccracken">Chroma Magazine Interview</a>"<br> Tryptic Press, March 2016</li>
-          <li>"<a href="https://www.foodnetwork.com/shows/outrageous/episodes/chocolate">Outrageous Chocolate</a>"<br> Food Network TV Special, February 2015</li>
-          <li>"<a href="https://www.bostonglobe.com/lifestyle/travel/2014/04/19/hot-burlington-new-england-locavore-capital-revels-good-taste/hgrbGRu3Fee04xqd7eCN5N/story.html">Burlington, VT: Locavore Capital</a><br> The Boston Globe, April 2014</li>
-        </ul>
-        <p><a href="/press/" title="Emily McCracken Press">View All Press<span aria-hidden="true"> &rarr;</span></a></p>
-      </div>
-      <div class="media-grid" data-ideal-columns="1">
-        {% youtube 'x-cA-IJmzF4', 'Chocolate Demonstration for Sweet Symposium at Shelburne Museum' %}
-        {% imagePlaceholder "./src/assets/images/press/emily-mccracken-demo.jpg", "aspect-16x9", "" %}
-      </div>
+    <ul style="--flow-space: 2rem;">
+      <li>"<a href="https://shelburnemuseum.org/exhibition/sweet-tooth-art-dessert/">Sweet Tooth: The Art of Dessert</a>" Shelburne Museum, September 2017</li>
+      <li>"<a href="https://www.trypticpress.com/emccracken">Chroma Magazine Interview</a>" Tryptic Press, March 2016</li>
+      <li>"<a href="https://www.foodnetwork.com/shows/outrageous/episodes/chocolate">Outrageous Chocolate</a>" Food Network TV Special, February 2015</li>
+      <li>"<a href="https://www.bostonglobe.com/lifestyle/travel/2014/04/19/hot-burlington-new-england-locavore-capital-revels-good-taste/hgrbGRu3Fee04xqd7eCN5N/story.html">Burlington, VT: Locavore Capital</a> The Boston Globe, April 2014</li>
+    </ul>
+    <p><a href="/press/" title="Emily McCracken Press">View All Press<span aria-hidden="true"> &rarr;</span></a></p>
+        
+    <div class="media-grid">
+      {% youtube 'x-cA-IJmzF4', 'Chocolate Demonstration for Sweet Symposium at Shelburne Museum' %}
+      {% imagePlaceholder "./src/assets/images/press/emily-mccracken-demo.jpg", "aspect-16x9", "" %}
     </div>
   </article>
 
