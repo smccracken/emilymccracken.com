@@ -366,6 +366,7 @@ picture {
   height: auto;
 }
 
+.aspect-16x9,
 .youtube-embed {
   aspect-ratio: 16 / 9;
 }
