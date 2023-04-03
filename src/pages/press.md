@@ -1,5 +1,5 @@
 ---
-title: In the Media
+title: In the Press
 permalink: /press/
 layout: collection
 youtube: true
@@ -26,9 +26,9 @@ My personal highlights include being featured on a Food Network Valentine's Day 
 * **"[Vermont Artist to be Featured on the Food Network](https://www.burlingtonfreepress.com/story/news/local/2015/02/01/chocolate-cuckoo-clock-appear-tv/22664593/)"** from Burlington Free Press, February 2015
 
 <div class="media-grid">
+{% imagePlaceholder "./src/assets/images/press/food-network-1.jpg", "aspect-16x9", "" %}
 {% imagePlaceholder "./src/assets/images/press/press-times-argus.jpg", "row-span-2", "" %}
 {% imagePlaceholder "./src/assets/images/press/press-free-press-food-network.jpg", "", "" %}
-{% imagePlaceholder "./src/assets/images/press/press-beyond-bonbons.jpg", "", "" %}
 {% imagePlaceholder "./src/assets/images/press/emily-mccracken-demo.jpg", "col-span-2", "" %}
 </div>
 

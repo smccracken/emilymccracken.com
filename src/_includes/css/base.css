@@ -314,6 +314,10 @@ picture {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .media-grid[data-ideal-columns="1"] {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .media-grid .row-span-2 {
     grid-row: auto / span 2;
   }
@@ -369,4 +373,8 @@ picture {
 .aspect-16x9,
 .youtube-embed {
   aspect-ratio: 16 / 9;
+}
+
+.aspect-16x9 img {
+  height: auto;
 }

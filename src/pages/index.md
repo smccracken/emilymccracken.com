@@ -10,12 +10,7 @@ I'm a licensed art educator that is <mark>seeking a position within K&#8211;12 a
 
 Previously I worked at a chocolate company where I lead demonstrations, taught classes, and created retail specialty products for 20 years.
 
-My happiest moments came while integrating art into my job. Specifically while building [chocolate sculptures](https://chocolatesculptress.com) that were used in our stores, [featured on the Food Network](https://chocolatesculptress.com/sculptures/cuckoo-clock/ "Giant Chocolate Cuckoo Clock on the Food Network"), and [displayed as part of an exhibit](https://chocolatesculptress.com/sculptures/donut-shop/ "Donut Shop Chocolate Sculpture on display at Shelburne Museum") at the Shelburne Museum. [View all press about this job &rarr;](/press/)
-
-<div class="media-grid">
-{% imagePlaceholder "./src/assets/images/press/emily-mccracken-demo-16x9.jpg", "", "" %}
-{% youtube 'x-cA-IJmzF4', 'Chocolate Demonstration for Sweet Symposium at Shelburne Museum' %}
-</div>
+My happiest moments came while integrating art into my job. Specifically building [chocolate sculptures](https://chocolatesculptress.com) that were used in our stores, [featured on the Food Network](https://chocolatesculptress.com/sculptures/cuckoo-clock/ "Giant Chocolate Cuckoo Clock on the Food Network"), and [put on exhibit](https://chocolatesculptress.com/sculptures/donut-shop/ "Donut Shop Chocolate Sculpture on display at Shelburne Museum") at the Shelburne Museum. 
 
 ---
 
