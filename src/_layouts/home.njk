@@ -11,7 +11,7 @@ layout: base
     </div>
   </article>
 
-  <div class="container__wide d-flex d-flex__column flow">
+  <article class="container__wide d-flex d-flex__column flow">
     <h2 class="center">Art Examples</h2>
     <div class="thumb-grid">
       <article>
@@ -33,12 +33,12 @@ layout: base
         </a>
       </article>
     </div>
-  </div>
+  </article>
 
-  <div class="container__wide d-flex d-flex__column flow"  style="--flow-space: 5rem;">
+  <article class="container__wide d-flex d-flex__column flow"  style="--flow-space: 5rem;">
     <h2 class="center">In the Media</h2>
-    <div class="d-flex d-flex__row flow">
-      <div style="flex-basis:70%;">
+    <div class="sidebar">
+      <div>
         <ul>
           <li>"<a href="https://shelburnemuseum.org/exhibition/sweet-tooth-art-dessert/">Sweet Tooth: The Art of Dessert</a>"<br> Shelburne Museum, September 2017</li>
           <li>"<a href="https://www.trypticpress.com/emccracken">Chroma Magazine Interview</a>"<br> Tryptic Press, March 2016</li>
@@ -47,12 +47,12 @@ layout: base
         </ul>
         <p><a href="/press/" title="Emily McCracken Press">View All Press<span aria-hidden="true"> &rarr;</span></a></p>
       </div>
-      <div class="media-grid" data-ideal-columns="1" style="flex-basis:30%;">
+      <div class="media-grid" data-ideal-columns="1">
         {% youtube 'x-cA-IJmzF4', 'Chocolate Demonstration for Sweet Symposium at Shelburne Museum' %}
         {% imagePlaceholder "./src/assets/images/press/emily-mccracken-demo.jpg", "aspect-16x9", "" %}
       </div>
     </div>
-  </div>
+  </article>
 
 
   {% include "partials/hr.njk" %}

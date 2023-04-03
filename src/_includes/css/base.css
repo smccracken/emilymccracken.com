@@ -10,6 +10,7 @@
   --color-orange: #DE7931;
   --font-base: 'Lora', 'Georgia', serif;
   --font-heading: 'Merriweather', 'Lora', 'Georgia', serif;
+  --gutter: 1em;
   --flow-space: 1em;
   --line-height: 1.65;
   --line-height-tight: 1.1;
@@ -377,4 +378,21 @@ picture {
 
 .aspect-16x9 img {
   height: auto;
+}
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter,var(--space-s-l))
+}
+
+.sidebar>:first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: var(--sidebar-content-min-width,50%)
+}
+
+.sidebar>:last-child {
+  flex-basis: var(--sidebar-target-width,20rem);
+  flex-grow: 1
 }
