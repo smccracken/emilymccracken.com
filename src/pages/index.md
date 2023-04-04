@@ -12,8 +12,6 @@ Previously I worked at a chocolate company where I lead demonstrations, taught c
 
 My happiest moments came while integrating art into my job. Specifically building [chocolate sculptures](https://chocolatesculptress.com) that were used in our stores, [featured on the Food Network](https://chocolatesculptress.com/sculptures/cuckoo-clock/ "Giant Chocolate Cuckoo Clock on the Food Network"), and [put on exhibit](https://chocolatesculptress.com/sculptures/donut-shop/ "Donut Shop Chocolate Sculpture on display at Shelburne Museum") at the Shelburne Museum. 
 
----
-
 Working with chocolate was a blast, but it was time for a change. I've always been grateful for the guidance of my art teachers and now I’m hoping I can help kids find their creative spark. ✨
 
 From chocolate to crochet, I'm best when working with my hands &#8212; I'm a perpetual doodler, amateur baker, and retro treasure seeker. You'll always catch me laughing at a good pun. Learn [more about me](/about/ "About Emily McCracken").
