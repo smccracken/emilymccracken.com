@@ -10,7 +10,6 @@ Is baking art? Depends on how you do it 😄
   {% imagePlaceholder "./src/assets/images/baking/hedwig-cake.jpg", "", "" %}
   {% imagePlaceholder "./src/assets/images/baking/tie-dye-cupcakes.jpg", "row-span-2", "" %}
   {% imagePlaceholder "./src/assets/images/baking/chick-truffles.jpg", "", "" %}
-  {% imagePlaceholder "./src/assets/images/baking/marshmallows.jpg", "col-span-2", "" %}
   {% imagePlaceholder "./src/assets/images/baking/unicorn-cake.jpg", "col-span-2", "" %}
   {% imagePlaceholder "./src/assets/images/baking/parrot-cake.jpg", "", "" %}
   {% imagePlaceholder "./src/assets/images/baking/marzipan-eggs.jpg", "", "" %}
