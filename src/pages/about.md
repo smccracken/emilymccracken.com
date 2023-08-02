@@ -11,8 +11,8 @@ I have enthusiasm for all-things-crafty so you'll often find me sculpting things
 <div class="media-grid">
 {% imagePlaceholder "./src/assets/images/chocolate/chocolate-sculptress-1.jpg", "", "" %}
 {% imagePlaceholder "./src/assets/images/crochet/crochet-plant-1.jpg", "", "" %}
-{% imagePlaceholder "./src/assets/images/cakes/hedwig-cake-1.jpg", "", "" %}
-{% imagePlaceholder "./src/assets/images/hand-lettering/maple-latte-sign.jpg", "", "" %}
+{% imagePlaceholder "./src/assets/images/baking/hedwig-cake.jpg", "", "" %}
+{% imagePlaceholder "./src/assets/images/lettering/maple-latte-cropped.jpg", "", "" %}
 </div>
 
 ## Education

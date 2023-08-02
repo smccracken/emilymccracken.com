@@ -320,6 +320,10 @@ picture {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .media-grid[data-ideal-columns="3"] {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .media-grid .row-span-2 {
     grid-row: auto / span 2;
   }
@@ -364,7 +368,7 @@ picture {
 }
 
 .thumb-grid picture {
-  max-height: 295px;
+  aspect-ratio: 1/1;
   overflow: hidden;
 }
 
