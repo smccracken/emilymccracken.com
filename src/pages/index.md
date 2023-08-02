@@ -5,7 +5,7 @@ permalink: '/'
 youtube: true
 ---
 
-I'm a licensed art educator that is <mark>seeking a position within K&#8211;12 art in northern Vermont</mark> where I can share my contagious enthusiasm for all things crafty.
+I'm a licensed art educator that <mark>recently accepted a position to teach K-4 art</mark> in northern Vermont. I start in the fall of 2023 and can't wait to share my contagious enthusiasm for all things crafty!
 {% imagePlaceholder "./src/assets/images/doodle-not-yet.png", "doodle-not-yet", "A smiling illustrated sun rising from the lower right hand corner, the message says 'Not yet, but you will'" %}
 
 Previously I worked at a chocolate company where I lead demonstrations, taught classes, and created retail specialty products for 20 years.
@@ -14,4 +14,4 @@ My happiest moments came while integrating art into my job. Specifically buildin
 
 Working with chocolate was a blast, but it was time for a change. I've always been grateful for the guidance of my art teachers and now I’m hoping I can help kids find their creative spark. ✨
 
-From chocolate to crochet, I'm best when working with my hands &#8212; I'm a perpetual doodler, amateur baker, and retro treasure seeker. You'll always catch me laughing at a good pun. Learn [more about me](/about/ "About Emily McCracken").
+From chocolate to crochet, I'm best when working with my hands &#8212; I'm a perpetual doodler, amateur baker, and retro treasure seeker. I love a good pun and still believe in the value of [hand lettering](/lettering/).
