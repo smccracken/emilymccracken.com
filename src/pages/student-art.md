@@ -7,9 +7,14 @@ layout: collection
 I'm so proud of these art projects by my K-5 students! Some examples include art work inspired by portraits from Jean-Michel Basquiat, masks from Kimmy Cantrell, and food sculptures from Claes Oldenburg.
 
 <div class="media-grid">
-  {% imagePlaceholder "./src/assets/images/student-art/bird-portrait-1.jpg", "col-span-2 row-span-2", "A young artist's portrait of a blue jay in crayon. The jay is in front of a night sky filled with stars and a crescent moon." %}
+  {% imagePlaceholder "./src/assets/images/student-art/milton-art-show-1.jpg", "col-span-2 row-span-2", "A colletion of K-5 art on display during an art show at Milton Elementary" %}
   {% imagePlaceholder "./src/assets/images/student-art/monster-portrait-1.jpg", "", "A young artist's portrait of a friendly monster looking off to the side with its mouth opened in an oval. The monster is bright red on a green background." %}
   {% imagePlaceholder "./src/assets/images/student-art/letters-1.jpg", "", "A young artist drew their name in block letters on green and blue backgrounds, then cut the letters into squares and rearranged them to make an abstract art piece." %}
+  {% imagePlaceholder "./src/assets/images/student-art/gnome-homes-1.jpg", "col-span-2 row-span-2", "Three young artist's interpretations of gnome homes made out of clay and fired in a kiln." %}
+  {% imagePlaceholder "./src/assets/images/student-art/sweedish-dala-horses.jpg", "col-span-2 row-span-2", "A collection of illustrated Sweedish dala horses" %}
+  {% imagePlaceholder "./src/assets/images/student-art/bird-portrait-1.jpg", "col-span-2 row-span-2", "A young artist's portrait of a blue jay in crayon. The jay is in front of a night sky filled with stars and a crescent moon." %}
+  {% imagePlaceholder "./src/assets/images/student-art/paper-mache-animals-1.jpg", "", "A paper mache giraffe." %}
+  {% imagePlaceholder "./src/assets/images/student-art/paper-mache-animals-2.jpg", "", "A paper mache cat." %}
   {% imagePlaceholder "./src/assets/images/student-art/cantrell-1.jpg", "col-span-2 row-span-2", "A young artist's mask inspired by Kimmy Cantrell. The mask is a face in the shape of Vermont and has four main quadrants of color, from top left – blue with an orange eye, green with swirls of color, red with a white and purple eye, yellow with multi-colored lines." %}
   {% imagePlaceholder "./src/assets/images/student-art/food-sculpture-1.jpg", "", "A top down view of a sculpted food out of air dry clay including a pizza, a bagel, and a cupcake." %}
   {% imagePlaceholder "./src/assets/images/student-art/food-sculpture-2.jpg", "", "A top down view of a sculpted pizza slice made of air dry clay" %}
